@@ -1,0 +1,6 @@
+{
+  "name": "Campus Hub",
+  "description": "A comprehensive college campus management portal integrating student profile, notices, library catalog, class timetables, learning notes, exam fee payment and results analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
