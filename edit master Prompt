@@ -578,79 +578,128 @@ ADMINISTRATIVE OFFICER PERMISSIONS
 
 
 4. LIBRARIAN
-   - Manage library catalog
-   - Track book borrowing/returning
-   - Manage book availability
-   - Send overdue reminders
+   - Login with credentials
+   - View librarian dashboard
+   - Manage library book catalog
+   - Add, edit, and remove books
+   - Track book borrowing and returns
+   - Monitor book availability and inventory
+   - Approve book reservation requests
+   - Process book renewals
+   - Manage overdue books and fines
+   - Send reminders and notifications to students
+   - View borrowing history and library statistics
+   - Generate library reports
+   - Manage book categories and authors
+   - Track damaged or lost books
+   - Maintain digital library resources
 
+LIBRARIAN PAGES
+✓ Librarian Dashboard
+✓ Book Catalog Management
+✓ Borrow & Return Management
+✓ Book Reservation Center
+✓ Renewal Request Management
+✓ Overdue Books Tracking
+✓ Fine Management
+✓ Student Borrowing History
+✓ Digital Resources Management
+✓ Library Reports & Analytics
+✓ Notifications & Reminders
+✓ Library Settings
 
-================================================================================
-DEVELOPMENT PHASES:
-================================================================================
+LIBRARIAN DASHBOARD
+✓ Total Books in Library
+✓ Available Books
+✓ Borrowed Books
+✓ Reserved Books
+✓ Overdue Books
+✓ Books Due Today
+✓ Pending Renewal Requests
+✓ Pending Reservation Requests
+✓ Fine Collection Summary
+✓ Recent Borrowing Activities
+✓ Popular Books
+✓ Library Usage Statistics
+✓ Quick Actions Panel
 
-PHASE 1: PROJECT SETUP & AUTHENTICATION (Week 1-2)
-  ✓ Setup MERN development environment
-  ✓ Configure MongoDB and MongoDB Atlas
-  ✓ Setup Express server and basic routing
-  ✓ Implement JWT authentication
-  ✓ Create User and Student models
-  ✓ Setup authentication APIs (login, register, logout)
-  ✓ Create protected route middleware
+BOOK CATALOG MANAGEMENT
+✓ Add New Books
+✓ Edit Book Information
+✓ Delete Books
+✓ Manage Categories
+✓ Manage Authors
+✓ Manage ISBN Records
+✓ Upload Book Covers
+✓ Search and Filter Books
+✓ Bulk Import Books
+✓ Export Catalog Data
 
-PHASE 2: CORE BACKEND APIS (Week 3-4)
-  ✓ Create all MongoDB models/collections
-  ✓ Build CRUD APIs for notices
-  ✓ Build CRUD APIs for classroom notes
-  ✓ Build CRUD APIs for timetables
-  ✓ Build CRUD APIs for library and borrowing
-  ✓ Build CRUD APIs for exam fees
-  ✓ Build CRUD APIs for results and progress
-  ✓ Implement file upload (Cloudinary integration)
-  ✓ Setup email service for notifications
+BORROW & RETURN MANAGEMENT
+✓ Issue Books to Students
+✓ Accept Book Returns
+✓ Track Borrowing Status
+✓ Verify Student Eligibility
+✓ Calculate Due Dates
+✓ Generate Borrowing Records
+✓ View Active Borrow Transactions
 
-PHASE 3: FRONTEND SETUP & AUTH (Week 5-6)
-  ✓ Setup React project structure
-  ✓ Create routing and page navigation
-  ✓ Build login and registration pages
-  ✓ Implement authentication context
-  ✓ Create protected routes
-  ✓ Setup API client and interceptors
-  ✓ Build Navbar, Sidebar, Footer components
+RESERVATION MANAGEMENT
+✓ Approve Book Reservations
+✓ Reject Reservation Requests
+✓ Maintain Reservation Queue
+✓ Notify Students of Availability
+✓ Track Reservation History
 
-PHASE 4: FRONTEND - CORE PAGES (Week 7-10)
-  ✓ Build Dashboard page
-  ✓ Build Profile and Account page
-  ✓ Build Notice Board page
-  ✓ Build Classroom Notes page
-  ✓ Build TimeTable page
-  ✓ Build Library Portal page
-  ✓ Build Exam Fee Portal page
-  ✓ Build Results page
-  ✓ Build Progress Tracking page
+RENEWAL REQUEST MANAGEMENT
+✓ Review Renewal Requests
+✓ Approve Renewals
+✓ Reject Renewals
+✓ Update Due Dates
+✓ Notify Students of Decisions
 
-PHASE 5: ADVANCED FEATURES (Week 11-12)
-  ✓ Implement payment gateway integration
-  ✓ Setup notification system
-  ✓ Create admin panel basics
-  ✓ Implement search and filter functionality
-  ✓ Add download/export features
-  ✓ Create charts and progress analytics
+OVERDUE BOOKS & FINES
+✓ Track Overdue Books
+✓ Calculate Fine Amounts
+✓ Generate Fine Reports
+✓ Send Overdue Notifications
+✓ Record Fine Payments
+✓ Maintain Fine History
 
-PHASE 6: TESTING & OPTIMIZATION (Week 13-14)
-  ✓ Unit testing for APIs
-  ✓ Integration testing
-  ✓ Frontend performance optimization
-  ✓ Security testing
-  ✓ Error handling and validation
-  ✓ Cross-browser testing
+DIGITAL LIBRARY RESOURCES
+✓ Upload E-Books
+✓ Upload Research Papers
+✓ Manage Journals
+✓ Manage Digital Resources
+✓ Categorize Learning Materials
+✓ Track Resource Downloads
 
-PHASE 7: DEPLOYMENT (Week 15)
-  ✓ Setup production database
-  ✓ Configure environment variables
-  ✓ Deploy backend (Heroku, AWS, DigitalOcean, etc.)
-  ✓ Deploy frontend (Vercel, Netlify, etc.)
-  ✓ Setup CI/CD pipeline
-  ✓ Monitor and maintain
+REPORTS & ANALYTICS
+✓ Most Borrowed Books
+✓ Library Usage Statistics
+✓ Student Borrowing Trends
+✓ Overdue Reports
+✓ Fine Collection Reports
+✓ Inventory Reports
+✓ Monthly Activity Reports
+✓ Export PDF & Excel Reports
+
+LIBRARIAN PERMISSIONS
+✓ Manage Library Catalog
+✓ Issue & Return Books
+✓ Approve Reservations
+✓ Approve Renewals
+✓ Manage Digital Resources
+✓ Send Notifications
+✓ Generate Reports
+✓ Manage Fines
+✓ View Borrowing History
+
+✗ Cannot manage users outside library operations
+✗ Cannot modify system settings
+✗ Cannot approve academic results
+✗ Cannot manage financial transactions outside library fines
+✗ Cannot access administrator controls
 
 ================================================================================
 DEPLOYMENT & HOSTING:
@@ -682,34 +731,3 @@ RECOMMENDED OPTIONS:
    - Complete control
    - One-time investment
    - Requires maintenance
-
-================================================================================
-SUCCESS CRITERIA:
-================================================================================
-
-The website is successful when:
-
-✓ Students can securely login with their credentials
-✓ All personal information and verification documents are accessible
-✓ Students can view and download all classroom notes uploaded by teachers
-✓ Notice board displays all college announcements and events
-✓ Timetable shows class schedules clearly
-✓ Library portal is functional with borrowing history
-✓ Exam fee portal allows viewing and online payment
-✓ Results page displays all exam grades and marks
-✓ Progress tracking shows CGPA and academic achievements
-✓ Notifications are sent for important updates
-✓ System is responsive on desktop, tablet, and mobile devices
-✓ User authentication and authorization work properly
-✓ File uploads (notes, documents) work reliably
-✓ Payment processing is secure
-✓ Data is properly stored and retrievable
-
-================================================================================
-ESTIMATED PROJECT TIMELINE: 15 WEEKS (Full-stack implementation)
-ESTIMATED TEAM SIZE: 2-3 developers
-DIFFICULTY LEVEL: Intermediate to Advanced
-
-================================================================================
-END OF COMPREHENSIVE PROJECT PROMPT
-================================================================================
