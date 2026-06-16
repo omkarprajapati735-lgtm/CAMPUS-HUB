@@ -401,111 +401,251 @@ campus-hub-mern/
 KEY USER ROLES & PERMISSIONS:
 ================================================================================
 
-1. Student Features
+STUDENT ROLE & PERMISSIONS
+1. STUDENT
+   - Login with credentials
+   - Access personalized dashboard
+   - View academic information and profile
+   - Track attendance and academic performance
+   - Access study materials and classroom notes
+   - View timetable and exam schedules
+   - Access library services and borrowing history
+   - View and pay academic fees
+   - Access results and progress analytics
+   - Receive notifications and announcements
+   - Download certificates and academic documents
+   - Manage personal account settings
+STUDENT PAGES
+✓ Student Dashboard
+✓ Student Profile
+✓ Notice Board
+✓ Study Materials
+✓ Timetable
+✓ Library Portal
+✓ Fees & Payments
+✓ Results & Analytics
+✓ Notifications Center
+✓ Settings
 
-Dashboard
+STUDENT DASHBOARD
+
 Display:
-- Student Profile Summary
-- Attendance
-- GPA / CGPA
-- Active Subjects
-- Pending Fees
-- Borrowed Books
-- Recent Notices
-- Upcoming Classes
-- Upcoming Exams
+✓ Student Profile Summary
+✓ Attendance Overview
+✓ GPA / CGPA
+✓ Active Subjects
+✓ Pending Fees
+✓ Borrowed Books
+✓ Recent Notices
+✓ Upcoming Classes
+✓ Upcoming Exams
 
 Include:
-- Quick Action Cards
-- Analytics Widgets
-- Real-Time Updates
-- Dynamic Charts
+✓ Quick Action Cards
+✓ Analytics Widgets
+✓ Real-Time Updates
+✓ Dynamic Charts
+✓ Personalized Academic Summary
+✓ Semester Progress Overview
+✓ Performance Insights
 
-Profile
-- View Profile
-- Edit Profile
-- Upload Photo
-- Change Password
-- Contact Information Management
+Dashboard Widgets
+✓ Attendance Percentage
+✓ Current GPA
+✓ Overall CGPA
+✓ Total Credits Earned
+✓ Active Courses
+✓ Fee Payment Status
+✓ Library Borrow Status
+✓ Upcoming Deadlines
+✓ Recent Notifications
+✓ Academic Performance Graph
+✓ Semester Progress Tracker
+✓ Upcoming Events
 
-Notice Board
-- Search Notices
-- Filter Notices
-- Categories
-- Attachments
-- Notice Details
-- Read Tracking
+STUDENT PROFILE
+PROFILE FEATURES
+✓ View Profile
+✓ Edit Profile
+✓ Upload Profile Photo
+✓ Change Password
+✓ Contact Information Management
+✓ Parent/Guardian Information
+✓ Academic Information
+✓ Student ID Information
+✓ Batch & Semester Details
+✓ Account Security Settings
+Profile Information
+✓ Full Name
+✓ Roll Number
+✓ Registration Number
+✓ Email Address
+✓ Phone Number
+✓ Address
+✓ Department
+✓ Program
+✓ Semester
+✓ Batch
+✓ Profile Photo
+✓ Emergency Contact
 
-Categories:
-- Academic
-- Examination
-- Administration
-- Events
-- Placement
-- Emergency
+NOTICE BOARD
+NOTICE BOARD FEATURES
+✓ Search Notices
+✓ Filter Notices
+✓ Notice Categories
+✓ Attachments
+✓ Detailed Notice View
+✓ Read Tracking
+✓ Save Important Notices
+✓ Download Attachments
+Notice Categories
+✓ Academic
+✓ Examination
+✓ Administration
+✓ Events
+✓ Placement
+✓ Emergency
+Notice Functions
+✓ Mark as Read
+✓ Mark as Important
+✓ Search by Keywords
+✓ Filter by Date
+✓ Filter by Category
+✓ Attachment Downloads
+✓ Notice History
 
-Study Materials
-Features:
-- Subject-wise Notes
-- Semester-wise Notes
-- Search
-- Downloads
-- PDF Preview
-- Version History
-- Recently Viewed
-Support:
-- PDF
-- DOCX
-- PPTX
-- ZIP
-- Images
+STUDY MATERIALS
+STUDY MATERIAL FEATURES
+✓ Subject-wise Notes
+✓ Semester-wise Notes
+✓ Advanced Search
+✓ Downloads
+✓ PDF Preview
+✓ Version History
+✓ Recently Viewed Materials
+✓ Teacher Upload Information
+✓ Material Categories
+✓ Download Tracking
+Supported File Formats
+✓ PDF
+✓ DOCX
+✓ PPTX
+✓ ZIP
+✓ Images
+Material Filters
+✓ Subject
+✓ Semester
+✓ Teacher
+✓ Upload Date
+✓ File Type
 
-Timetable
-Features:
-- Daily View
-- Weekly View
-- Monthly View
-- Exam Schedule
-- Download Timetable
-- Calendar Integration
-- Real-Time Updates
+TIMETABLE
+TIMETABLE FEATURES
+✓ Daily View
+✓ Weekly View
+✓ Monthly View
+✓ Exam Schedule
+✓ Download Timetable
+✓ Calendar Integration
+✓ Real-Time Updates
+✓ Classroom Information
+✓ Instructor Details
+✓ Schedule Notifications
+Timetable Components
+✓ Class Timetable
+✓ Practical Schedule
+✓ Exam Timetable
+✓ Holiday Calendar
+✓ Event Calendar
+✓ Academic Deadlines
 
-Library
-Features:
-- Search Books
-- View Availability
-- Borrow History
-- Reservations
-- Due Dates
-- Fine Tracking
+LIBRARY PORTAL
+LIBRARY FEATURES
+✓ Search Books
+✓ View Book Availability
+✓ Borrow History
+✓ Book Reservations
+✓ Due Date Tracking
+✓ Fine Tracking
+✓ Digital Resources Access
+✓ Renewal Requests
+✓ Reading History
+Library Dashboard
+✓ Currently Borrowed Books
+✓ Due Soon Books
+✓ Overdue Books
+✓ Reservation Status
+✓ Outstanding Fines
+✓ Recent Borrowing Activity
 
-Fees & Payments
-Features:
-- Fee Dashboard
-- Payment History
-- Online Payments
-- Receipt Downloads
-- Transaction Tracking
-Integrate:
-- Razorpay / Stripe
+FEES & PAYMENTS
+FEES & PAYMENTS FEATURES
+✓ Fee Dashboard
+✓ Payment History
+✓ Online Payments
+✓ Receipt Downloads
+✓ Transaction Tracking
+✓ Due Date Notifications
+✓ Payment Verification
+✓ Fee Breakdown
 
-Results & Analytics
-Features:
-- Semester Results
-- Subject Results
-- GPA
-- CGPA
-- Performance Charts
-- Academic Analytics
-- Downloadable Marksheet
+Fee Categories
+✓ Tuition Fees
+✓ Examination Fees
+✓ Library Fees
+✓ Laboratory Fees
+✓ Hostel Fees
+✓ Miscellaneous Fees
 
-Notifications
-Features:
-- Real-Time Notifications
-- Read/Unread Status
-- Search
-- Filters
-- Categorization
+RESULTS & ANALYTICS
+RESULTS FEATURES
+✓ Semester Results
+✓ Subject Results
+✓ GPA Calculation
+✓ CGPA Calculation
+✓ Performance Charts
+✓ Academic Analytics
+✓ Downloadable Marksheet
+✓ Result History
+✓ Academic Trends
+Analytics Dashboard
+✓ GPA Trend Analysis
+✓ CGPA Progress
+✓ Subject Performance
+✓ Semester Comparison
+✓ Credit Completion Status
+✓ Academic Achievement Tracking
+✓ Performance Predictions
+Result Components
+✓ Subject Name
+✓ Marks Obtained
+✓ Total Marks
+✓ Grade
+✓ Credits
+✓ GPA
+✓ CGPA
+✓ Academic Standing
+
+NOTIFICATIONS CENTER
+NOTIFICATION FEATURES
+✓ Real-Time Notifications
+✓ Read/Unread Status
+✓ Search Notifications
+✓ Filters
+✓ Categorization
+✓ Notification History
+✓ Priority Labels
+✓ Actionable Alerts
+Notification Categories
+✓ Academic Updates
+✓ Examination Alerts
+✓ Fee Notifications
+✓ Library Alerts
+✓ Event Announcements
+✓ Placement Updates
+✓ Emergency Notifications
+✓ Administrative Notices
 
 2. TEACHER
    - Login with credentials
