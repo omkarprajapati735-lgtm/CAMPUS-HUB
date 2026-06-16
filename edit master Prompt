@@ -420,15 +420,67 @@ KEY USER ROLES & PERMISSIONS:
    - Post notices and announcements
    - View student progress (optional)
 
-3. ADMINISTRATOR
-   - Manage all users (students, teachers, staff)
-   - Create and delete notices
-   - Approve/manage classroom notes
-   - Manage library inventory
-   - Manage exam fees and payments
-   - Approve results
-   - System configuration
-   - Generate reports
+3. ADMINISTRATIVE OFFICER
+   - Login with credentials
+   - View administrative dashboard
+   - Manage student records and enrollment information
+   - Verify student documents and credentials
+   - Approve certificate requests and document issuance
+   - Process student applications and administrative requests
+   - Publish notices and institutional announcements
+   - Manage student grievances and support requests
+   - Monitor attendance and compliance reports
+   - Coordinate departmental communications
+   - Generate administrative reports and statistics
+   - Track academic deadlines and operational activities
+   - View student academic progress and status
+   - Maintain institutional records and documentation
+
+ADMINISTRATIVE OFFICER PAGES
+✓ Administrative Dashboard
+✓ Student Records Management
+✓ Document Verification Center
+✓ Certificate Management
+✓ Student Applications & Requests
+✓ Notice & Communication Center
+✓ Grievance Management Portal
+✓ Attendance Monitoring
+✓ Department Coordination Hub
+✓ Reports & Analytics
+✓ Activity Logs
+✓ Administrative Settings
+
+ADMINISTRATIVE OFFICER DASHBOARD
+✓ Total Students
+✓ New Admissions Pending Review
+✓ Documents Awaiting Verification
+✓ Pending Certificate Requests
+✓ Open Student Applications
+✓ Active Grievances
+✓ Recent Notices
+✓ Upcoming Academic Deadlines
+✓ Department Requests
+✓ Quick Administrative Actions
+✓ Monthly Activity Summary
+✓ Administrative Performance Metrics
+
+ADMINISTRATIVE OFFICER PERMISSIONS
+✓ View Student Records
+✓ Verify Documents
+✓ Approve Certificates
+✓ Manage Administrative Requests
+✓ Publish Notices
+✓ View Academic Data
+✓ Generate Reports
+✓ Access Department Information
+✓ Monitor Attendance Reports
+✓ Manage Grievances
+
+✗ Cannot modify system configuration
+✗ Cannot manage platform security settings
+✗ Cannot delete administrator accounts
+✗ Cannot access financial transaction controls
+
 
 4. LIBRARIAN
    - Manage library catalog
@@ -436,11 +488,6 @@ KEY USER ROLES & PERMISSIONS:
    - Manage book availability
    - Send overdue reminders
 
-5. FINANCE STAFF
-   - Manage exam fees
-   - Process payments
-   - Generate fee reports and receipts
-   - View payment history
 
 ================================================================================
 DEVELOPMENT PHASES:
