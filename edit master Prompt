@@ -401,16 +401,111 @@ campus-hub-mern/
 KEY USER ROLES & PERMISSIONS:
 ================================================================================
 
-1. STUDENT
-   - Login with credentials
-   - View own dashboard and profile
-   - Access all notices and announcements
-   - Download classroom notes
-   - View personal timetable
-   - Access library portal
-   - View and pay exam fees
-   - View personal results and progress
-   - Edit own profile information
+1. Student Features
+
+Dashboard
+Display:
+- Student Profile Summary
+- Attendance
+- GPA / CGPA
+- Active Subjects
+- Pending Fees
+- Borrowed Books
+- Recent Notices
+- Upcoming Classes
+- Upcoming Exams
+
+Include:
+- Quick Action Cards
+- Analytics Widgets
+- Real-Time Updates
+- Dynamic Charts
+
+Profile
+- View Profile
+- Edit Profile
+- Upload Photo
+- Change Password
+- Contact Information Management
+
+Notice Board
+- Search Notices
+- Filter Notices
+- Categories
+- Attachments
+- Notice Details
+- Read Tracking
+
+Categories:
+- Academic
+- Examination
+- Administration
+- Events
+- Placement
+- Emergency
+
+Study Materials
+Features:
+- Subject-wise Notes
+- Semester-wise Notes
+- Search
+- Downloads
+- PDF Preview
+- Version History
+- Recently Viewed
+Support:
+- PDF
+- DOCX
+- PPTX
+- ZIP
+- Images
+
+Timetable
+Features:
+- Daily View
+- Weekly View
+- Monthly View
+- Exam Schedule
+- Download Timetable
+- Calendar Integration
+- Real-Time Updates
+
+Library
+Features:
+- Search Books
+- View Availability
+- Borrow History
+- Reservations
+- Due Dates
+- Fine Tracking
+
+Fees & Payments
+Features:
+- Fee Dashboard
+- Payment History
+- Online Payments
+- Receipt Downloads
+- Transaction Tracking
+Integrate:
+- Razorpay / Stripe
+
+Results & Analytics
+Features:
+- Semester Results
+- Subject Results
+- GPA
+- CGPA
+- Performance Charts
+- Academic Analytics
+- Downloadable Marksheet
+
+Notifications
+Features:
+- Real-Time Notifications
+- Read/Unread Status
+- Search
+- Filters
+- Categorization
 
 2. TEACHER
    - Login with credentials
