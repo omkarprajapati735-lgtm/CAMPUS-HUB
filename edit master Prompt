@@ -647,13 +647,263 @@ Notification Categories
 ✓ Emergency Notifications
 ✓ Administrative Notices
 
+TEACHER ROLE & PERMISSIONS
 2. TEACHER
    - Login with credentials
-   - Upload classroom notes and materials
+   - Access personalized teaching dashboard
+   - Manage assigned courses and subjects
+   - Upload classroom notes and study materials
    - Create and manage timetables
-   - Upload exam results
-   - Post notices and announcements
-   - View student progress (optional)
+   - Manage student attendance
+   - Upload exam results and grades
+   - Publish notices and announcements
+   - View student academic progress
+   - Schedule classes and assessments
+   - Communicate with students
+   - Access teaching analytics and reports+
+
+TEACHER PAGES
+✓ Teacher Dashboard
+✓ My Courses & Subjects
+✓ Classroom Notes Management
+✓ Attendance Management
+✓ Timetable Management
+✓ Assignments & Assessments
+✓ Results & Grading
+✓ Student Performance Analytics
+✓ Notice & Announcement Center
+✓ Student Communication Portal
+✓ Reports & Analytics
+✓ Teacher Profile & Settings
+
+TEACHER DASHBOARD
+TEACHER DASHBOARD
+Display:
+✓ Teacher Profile Summary
+✓ Assigned Subjects
+✓ Total Students
+✓ Today's Classes
+✓ Upcoming Exams
+✓ Pending Evaluations
+✓ Recent Notices
+✓ Student Attendance Summary
+✓ Assignment Statistics
+
+Include:
+✓ Quick Action Cards
+✓ Academic Analytics Widgets
+✓ Real-Time Updates
+✓ Dynamic Performance Charts
+✓ Teaching Workload Overview
+✓ Student Engagement Metrics
+Dashboard Widgets
+✓ Total Classes Conducted
+✓ Active Subjects
+✓ Total Students
+✓ Average Attendance
+✓ Pending Assignments
+✓ Upcoming Assessments
+✓ Notes Uploaded
+✓ Recent Announcements
+✓ Student Performance Summary
+✓ Weekly Teaching Schedule
+✓ Academic Activity Timeline
+
+MY COURSES & SUBJECTS
+COURSE MANAGEMENT FEATURES
+✓ View Assigned Subjects
+✓ Manage Course Information
+✓ Upload Syllabus
+✓ Course Resources Management
+✓ Student Enrollment View
+✓ Subject Performance Overview
+✓ Academic Calendar Integration
+Course Details
+✓ Subject Name
+✓ Subject Code
+✓ Semester
+✓ Department
+✓ Total Students
+✓ Credits
+✓ Course Coordinator Information
+
+CLASSROOM NOTES MANAGEMENT
+CLASSROOM NOTES FEATURES
+✓ Upload Notes
+✓ Edit Notes
+✓ Delete Notes
+✓ Organize by Subject
+✓ Organize by Semester
+✓ Version Control
+✓ Preview Materials
+✓ Download Statistics
+✓ Student Access Tracking
+Supported Formats
+✓ PDF
+✓ DOCX
+✓ PPTX
+✓ XLSX
+✓ ZIP
+✓ Images
+✓ Video Links
+Material Categories
+✓ Lecture Notes
+✓ Assignments
+✓ Lab Manuals
+✓ Question Banks
+✓ Reference Materials
+✓ Project Guidelines
+✓ Research Papers
+
+ATTENDANCE MANAGEMENT
+ATTENDANCE FEATURES
+✓ Mark Attendance
+✓ Bulk Attendance Entry
+✓ Edit Attendance Records
+✓ Attendance Reports
+✓ Attendance Analytics
+✓ Defaulter Identification
+✓ Attendance Notifications
+✓ Export Attendance Reports
+Attendance Dashboard
+✓ Daily Attendance
+✓ Subject-wise Attendance
+✓ Monthly Attendance
+✓ Attendance Trends
+✓ Low Attendance Alerts
+✓ Student Attendance History
+
+TIMETABLE MANAGEMENT
+TIMETABLE FEATURES
+✓ Create Timetable
+✓ Edit Timetable
+✓ Schedule Classes
+✓ Assign Classrooms
+✓ Manage Practical Sessions
+✓ Exam Scheduling
+✓ Calendar Integration
+✓ Real-Time Schedule Updates
+Schedule Components
+✓ Lecture Schedule
+✓ Lab Schedule
+✓ Tutorial Schedule
+✓ Examination Schedule
+✓ Academic Events
+✓ Faculty Meetings
+
+ASSIGNMENTS & ASSESSMENTS
+ASSIGNMENT FEATURES
+✓ Create Assignments
+✓ Upload Assignment Files
+✓ Set Deadlines
+✓ Manage Submissions
+✓ Review Student Work
+✓ Grade Assignments
+✓ Provide Feedback
+✓ Track Submission Status
+Assessment Types
+✓ Assignments
+✓ Quizzes
+✓ Mid-Term Exams
+✓ Final Exams
+✓ Practical Assessments
+✓ Projects
+✓ Presentations
+
+RESULTS & GRADING
+RESULT MANAGEMENT FEATURES
+✓ Upload Results
+✓ Edit Results
+✓ Grade Students
+✓ Bulk Result Upload
+✓ Publish Results
+✓ Generate Mark Sheets
+✓ Performance Analysis
+✓ Result Validation
+Result Components
+✓ Subject Name
+✓ Student Name
+✓ Marks Obtained
+✓ Total Marks
+✓ Grade
+✓ Credits
+✓ GPA Contribution
+✓ Remarks
+
+STUDENT PERFORMANCE ANALYTICS
+PERFORMANCE FEATURES
+✓ Student Performance Dashboard
+✓ Subject Performance Analysis
+✓ GPA Monitoring
+✓ Attendance Correlation
+✓ Top Performers
+✓ At-Risk Students
+✓ Academic Trends
+✓ Comparative Analysis
+Analytics Reports
+✓ Class Performance Report
+✓ Subject Analysis
+✓ Grade Distribution
+✓ Attendance Analysis
+✓ Improvement Tracking
+✓ Semester Comparison
+
+NOTICE & ANNOUNCEMENT CENTER
+NOTICE FEATURES
+✓ Create Notices
+✓ Publish Announcements
+✓ Schedule Notices
+✓ Attach Documents
+✓ Categorize Notices
+✓ Target Specific Classes
+✓ Edit Published Notices
+✓ Track Student Read Status
+Categories
+✓ Academic
+✓ Examination
+✓ Assignment
+✓ Event
+✓ Placement
+✓ Emergency
+
+STUDENT COMMUNICATION PORTAL
+COMMUNICATION FEATURES
+✓ Send Messages
+✓ Class-wide Announcements
+✓ Individual Student Communication
+✓ Discussion Threads
+✓ Doubt Resolution
+✓ Meeting Requests
+✓ Notification Broadcasting
+Communication Tools
+✓ Direct Messaging
+✓ Group Messaging
+✓ Class Notifications
+✓ Academic Discussions
+✓ Feedback Channels
+
+REPORTS & ANALYTICS
+REPORTING FEATURES
+✓ Attendance Reports
+✓ Academic Performance Reports
+✓ Assignment Reports
+✓ Subject Analytics
+✓ Student Progress Reports
+✓ Examination Reports
+✓ Faculty Activity Reports
+✓ Export PDF & Excel Reports
+
+TEACHER PROFILE & SETTINGS
+PROFILE FEATURES
+✓ View Profile
+✓ Edit Profile
+✓ Upload Profile Photo
+✓ Change Password
+✓ Contact Information Management
+✓ Department Information
+✓ Subject Assignments
+✓ Notification Preferences
+✓ Account Security Settings
 
 3. ADMINISTRATIVE OFFICER
    - Login with credentials
