@@ -59,87 +59,6 @@ because it will:
    - Provide settings and preferences management
 
 ================================================================================
-KEY FEATURES TO IMPLEMENT:
-================================================================================
-
-AUTHENTICATION & ACCOUNT MANAGEMENT:
-  ✓ Secure login system with JWT authentication
-  ✓ Student registration and email verification
-  ✓ Password reset and account security
-  ✓ Role-based access control (Student, Teacher, Admin, Librarian, Finance Staff)
-
-STUDENT DASHBOARD:
-  ✓ Personalized dashboard with quick access to key features
-  ✓ Recent notices and announcements
-  ✓ Upcoming classes and events
-  ✓ Fee payment status
-  ✓ Latest exam results
-  ✓ Profile card with personal information
-
-PROFILE & ACCOUNT PAGE:
-  ✓ View and edit personal details (name, email, phone)
-  ✓ Upload and manage profile picture
-  ✓ View verification documents and credentials
-  ✓ Display student roll number, semester, batch
-  ✓ Contact information management
-  ✓ Account settings and preferences
-
-NOTICE BOARD & ANNOUNCEMENTS:
-  ✓ Display all college notices with dates and importance levels
-  ✓ Search and filter notices
-  ✓ View daily updates and college news
-  ✓ Mark important notices as favorites
-  ✓ Notification system for new notices
-
-CLASSROOM NOTES & LEARNING MATERIALS:
-  ✓ Organized collection of classroom notes uploaded by teachers
-  ✓ Filter notes by subject, semester, and teacher
-  ✓ Preview and download PDF documents
-  ✓ View upload date and file size
-  ✓ Track viewed/not viewed materials
-  ✓ Search functionality for quick access
-
-LECTURE SCHEDULES & TIMETABLES:
-  ✓ Display complete class timetable
-  ✓ View schedule by day, week, or semester
-  ✓ Show classroom location and instructor details
-  ✓ Calendar view of classes and exam dates
-  ✓ Export timetable functionality
-
-LIBRARY MANAGEMENT PORTAL:
-  ✓ Browse complete library book catalog
-  ✓ Search books by title, author, ISBN, or category
-  ✓ View book availability status
-  ✓ Detailed borrowing history with dates
-  ✓ Track overdue books and due dates
-  ✓ Request book renewal or reservation
-
-EXAM FEE PORTAL:
-  ✓ View exam fees for current and previous semesters
-  ✓ Display payment status (paid/pending)
-  ✓ Secure online payment integration
-  ✓ Payment receipt generation
-  ✓ Fee payment history and records
-  ✓ Payment deadline reminders
-
-RESULTS & ACADEMIC PROGRESS:
-  ✓ View exam results and grades (subject-wise)
-  ✓ Display marks out of total marks
-  ✓ Show grade letters (A, B, C, D, etc.)
-  ✓ CGPA calculation and display
-  ✓ Semester-wise performance analysis
-  ✓ Progress tracking dashboard with charts
-  ✓ Compare performance across semesters
-  ✓ Download result transcripts
-
-ADDITIONAL PAGES:
-  ✓ Contact directory (faculty, staff, departments)
-  ✓ Certificate download page
-  ✓ Settings page (notification preferences, theme, language)
-  ✓ About college page
-  ✓ Help and FAQ section
-
-================================================================================
 TECHNOLOGY STACK - MERN:
 ================================================================================
 
@@ -173,7 +92,6 @@ ADDITIONAL SERVICES:
 ================================================================================
 DATABASE COLLECTIONS (MongoDB):
 ================================================================================
-
 Users:
   - _id, email, password (hashed), role, createdAt, updatedAt
 
@@ -220,6 +138,87 @@ Announcements:
 Messages/Notifications:
   - _id, recipientId (ref), senderId (ref), message, type, read, 
     createdAt, relatedEntity
+================================================================================
+DATA BASE AS PER USER ROLES:
+================================================================================
+STUDENT DATABASE COLLECTION
+Students:
+{
+  _id,
+  userId,
+  rollNumber,
+  registrationNumber,
+  fullName,
+  email,
+  phone,
+  department,
+  program,
+  semester,
+  batch,
+  profilePhoto,
+  attendancePercentage,
+  currentGPA,
+  currentCGPA,
+  borrowedBooks,
+  feeStatus,
+  emergencyContact,
+  createdAt,
+  updatedAt
+}
+
+
+TEACHER DATABASE COLLECTION
+Teachers:
+{
+  _id,
+  userId,
+  employeeId,
+  fullName,
+  email,
+  phone,
+  department,
+  designation,
+  assignedSubjects,
+  profilePhoto,
+  joiningDate,
+  qualifications,
+  experience,
+  createdAt,
+  updatedAt
+}
+
+
+ADMINISTRATIVE OFFICER DATABASE COLLECTION
+AdministrativeOfficers:
+{
+  _id,
+  userId,
+  employeeId,
+  designation,
+  department,
+  officeLocation,
+  contactNumber,
+  permissions,
+  createdAt,
+  updatedAt
+}
+
+LIBRARIAN DATABASE COLLECTION
+Librarians:
+{
+  _id,
+  userId,
+  employeeId,
+  librarianName,
+  department,
+  contactNumber,
+  assignedLibrary,
+  permissions,
+  createdAt,
+  updatedAt
+}
+
+
 
 ================================================================================
 PROJECT FOLDER STRUCTURE:
@@ -415,6 +414,7 @@ STUDENT ROLE & PERMISSIONS
    - Receive notifications and announcements
    - Download certificates and academic documents
    - Manage personal account settings
+
 STUDENT PAGES
 ✓ Student Dashboard
 ✓ Student Profile
