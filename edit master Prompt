@@ -108,53 +108,62 @@ Socket.IO
 
 
 ================================================================================
-DATABASE COLLECTIONS (MongoDB):
+API ARCHITECTURE
 ================================================================================
-Users:
-  - _id, email, password (hashed), role, createdAt, updatedAt
 
+API ARCHITECTURE
 
-Notices:
-  - _id, title, description, postedBy (ref), createdAt, updatedAt, 
-    importance, category
+AUTH
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/refresh-token
+POST /api/auth/forgot-password
 
-ClassroomNotes:
-  - _id, subject, uploadedBy (ref), fileUrl (Cloudinary), fileName, 
-    semester, fileSize, views, createdAt, description
+STUDENTS
+GET /api/students/profile
+PUT /api/students/profile
 
-TimeTables:
-  - _id, semester, day, startTime, endTime, subject, instructor, 
-    classroom, createdAt
+TEACHERS
+GET /api/teachers/profile
+PUT /api/teachers/profile
 
-LibraryBooks:
-  - _id, title, author, isbn, quantity, available, category, 
-    description, publishedYear
+NOTICES
+GET /api/notices
+GET /api/notices/:id
+POST /api/notices
+PUT /api/notices/:id
+DELETE /api/notices/:id
 
-BorrowHistory:
-  - _id, studentId (ref), bookId (ref), borrowedDate, dueDate, 
-    returnDate, status, fines
+ASSIGNMENTS
+GET /api/assignments
+POST /api/assignments
+PUT /api/assignments/:id
+DELETE /api/assignments/:id
 
-ExamFees:
-  - _id, studentId (ref), semester, amount, paid, paymentDate, 
-    transactionId, dueDate
+ATTENDANCE
+POST /api/attendance
+GET /api/attendance/student/:id
 
-Results:
-  - _id, studentId (ref), subject, marks, totalMarks, grade, semester, 
-    publishedDate, createdAt
+RESULTS
+GET /api/results
+POST /api/results
 
-StudentProgress:
-  - _id, studentId (ref), currentCGPA, totalCredits, passedCredits, 
-    currentSemester, academicHistory
+LIBRARY
+GET /api/books
+POST /api/books
 
-Announcements:
-  - _id, title, content, category, postedBy (ref), createdAt, endDate, 
-    priority
+FINANCE
+GET /api/payments
+POST /api/payments
+POST /api/refunds
 
-Messages/Notifications:
-  - _id, recipientId (ref), senderId (ref), message, type, read, 
-    createdAt, relatedEntity
+NOTIFICATIONS
+GET /api/notifications
+POST /api/notifications
+
 ================================================================================
-DATA BASE AS PER USER ROLES:
+DATA BASE AS PER USER ROLES (Mongo DB):
 ================================================================================
 STUDENT DATABASE COLLECTION
 Students
