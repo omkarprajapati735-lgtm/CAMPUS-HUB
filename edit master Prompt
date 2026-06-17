@@ -1240,6 +1240,29 @@ SECURITY
 ✓ Role-Based Access
 
 ================================================================================
+ENVIRONMENT VARIABLES
+================================================================================
+
+PORT=
+MONGODB_URI=
+JWT_SECRET=
+JWT_REFRESH_SECRET=
+
+CLOUDINARY_NAME=
+CLOUDINARY_KEY=
+CLOUDINARY_SECRET=
+
+RAZORPAY_KEY=
+RAZORPAY_SECRET=
+
+EMAIL_HOST=
+EMAIL_PORT=
+EMAIL_USER=
+EMAIL_PASS=
+
+CLIENT_URL=
+
+================================================================================
 DEPLOYMENT & HOSTING:
 ================================================================================
 
