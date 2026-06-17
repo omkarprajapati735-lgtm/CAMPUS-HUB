@@ -921,19 +921,19 @@ PROFILE FEATURES
    - View student academic progress and status
    - Maintain institutional records and documentation
 
-ADMINISTRATIVE OFFICER PAGES
-✓ Administrative Dashboard
-✓ Student Records Management
-✓ Document Verification Center
-✓ Certificate Management
-✓ Student Applications & Requests
-✓ Notice & Communication Center
-✓ Grievance Management Portal
-✓ Attendance Monitoring
-✓ Department Coordination Hub
+ADMINISTRATOR PAGES
+✓ Admin Dashboard
+✓ User Management
+✓ Role Management
+✓ Department Management
+✓ System Configuration
+✓ Notice Management
+✓ Library Oversight
+✓ Finance Oversight
+✓ Academic Oversight
 ✓ Reports & Analytics
-✓ Activity Logs
-✓ Administrative Settings
+✓ Audit Logs
+✓ Security Center
 
 ADMINISTRATIVE OFFICER DASHBOARD
 ✓ Total Students
