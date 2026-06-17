@@ -163,6 +163,26 @@ GET /api/notifications
 POST /api/notifications
 
 ================================================================================
+Development Rules
+================================================================================
+
+DEVELOPMENT RULES
+
+✓ Use MVC Pattern
+✓ Use Feature-Based Modules
+✓ Use REST APIs
+✓ Use JWT Authentication
+✓ Use Refresh Tokens
+✓ Use Role-Based Access Control
+✓ Use Socket.IO
+✓ Use Cloudinary
+✓ Use Redux Toolkit
+✓ Use RTK Query
+✓ Use React Hook Form
+✓ Use Zod Validation
+✓ Use TypeScript Preferred
+
+================================================================================
 DATA BASE AS PER USER ROLES (Mongo DB):
 ================================================================================
 STUDENT DATABASE COLLECTION
