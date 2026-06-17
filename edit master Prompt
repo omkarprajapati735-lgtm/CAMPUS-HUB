@@ -59,6 +59,28 @@ because it will:
    - Provide settings and preferences management
 
 ================================================================================
+PROJECT SCOPE
+================================================================================
+
+The system must only support:
+
+✓ Student Management
+✓ Teacher Management
+✓ Administrative Management
+✓ Library Management
+✓ Finance Management
+✓ Academic Management
+
+OUT OF SCOPE
+
+✗ Hostel Management
+✗ Transport Management
+✗ HR Management
+✗ Payroll System
+✗ Alumni Portal
+✗ Parent Portal
+
+================================================================================
 TECHNOLOGY STACK - MERN:
 ================================================================================
 
@@ -1046,6 +1068,105 @@ Subjects
 Departments
 Grievances
 
+FinanceStaff
+{
+  _id,
+  userId,
+  employeeId,
+  fullName,
+  department,
+  designation,
+  permissions,
+  createdAt,
+  updatedAt
+}
+Refunds
+{
+  _id,
+  transactionId,
+  studentId,
+  amount,
+  reason,
+  status,
+  approvedBy,
+  createdAt
+}
+AuditLogs
+{
+  _id,
+  userId,
+  action,
+  module,
+  entityId,
+  oldData,
+  newData,
+  ipAddress,
+  createdAt
+}
+Chats
+{
+  _id,
+  senderId,
+  receiverId,
+  message,
+  attachments,
+  isRead,
+  createdAt
+}
+Certificates
+{
+  _id,
+  studentId,
+  certificateType,
+  issueDate,
+  fileUrl,
+  issuedBy
+}
+
+================================================================================
+ROLE ACCESS MATRIX
+================================================================================
+
+
+Module               Student Teacher Admin Officer Librarian Finance
+
+Dashboard               R       R      R      R         R        R
+Students                R       R      CRUD   CRUD      -        -
+Teachers                -       R      CRUD   R         -        -
+Library                 R       R      CRUD   R        CRUD      -
+Finance                 R       -      CRUD   R         -      CRUD
+Results                 R      CRUD    CRUD   R         -        -
+Certificates            R       -      CRUD  CRUD       -        -
+Grievances             CRUD     -      CRUD  CRUD       -        -
+
+
+
+================================================================================
+VALIDATION RULES
+================================================================================
+
+
+Email:
+Must be valid email format
+
+Password:
+Minimum 8 characters
+One uppercase
+One lowercase
+One number
+One special character
+
+Phone:
+10-15 digits
+
+Roll Number:
+Unique
+
+Employee ID:
+Unique
+
+Transaction ID:
+Unique
 
 
 ================================================================================
