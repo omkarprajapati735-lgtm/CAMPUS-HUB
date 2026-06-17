@@ -89,6 +89,24 @@ ADDITIONAL SERVICES:
   • Email Service (Nodemailer) - Notifications and alerts
   • JWT Tokens - Authentication
 
+Authentication Features
+
+✓ JWT Access Token
+✓ Refresh Token
+✓ Role-Based Access Control
+✓ Password Reset
+✓ Account Lockout
+✓ Email Verification
+✓ Login Activity Logs
+
+Socket.IO
+- Real-time notifications
+- Live announcements
+- Chat updates
+- Attendance updates
+
+
+
 ================================================================================
 DATABASE COLLECTIONS (MongoDB):
 ================================================================================
@@ -264,6 +282,22 @@ Subjects
   credits,
   assignedTeacher
 }
+
+NotificationPreferences
+{
+ userId,
+ emailEnabled,
+ pushEnabled,
+ smsEnabled
+}
+
+Search Architecture
+MongoDB indexes:
+
+title
+subject
+author
+noticeCategory
 
 
 ================================================================================
@@ -575,9 +609,6 @@ STUDY MATERIAL FEATURES
 ✓ Download Tracking
 Supported File Formats
 ✓ PDF
-✓ DOCX
-✓ PPTX
-✓ ZIP
 ✓ Images
 Material Filters
 ✓ Subject
