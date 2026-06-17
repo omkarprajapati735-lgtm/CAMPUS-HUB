@@ -95,9 +95,6 @@ DATABASE COLLECTIONS (MongoDB):
 Users:
   - _id, email, password (hashed), role, createdAt, updatedAt
 
-Students:
-  - _id, userId (ref), rollNo, semester, batch, gpa, parentContact, 
-    profileImage, verified, verificationDocuments
 
 Notices:
   - _id, title, description, postedBy (ref), createdAt, updatedAt, 
@@ -142,9 +139,8 @@ Messages/Notifications:
 DATA BASE AS PER USER ROLES:
 ================================================================================
 STUDENT DATABASE COLLECTION
-Students:
+Students
 {
-  _id,
   userId,
   rollNumber,
   registrationNumber,
@@ -152,18 +148,16 @@ Students:
   email,
   phone,
   department,
-  program,
   semester,
   batch,
-  profilePhoto,
   attendancePercentage,
   currentGPA,
   currentCGPA,
-  borrowedBooks,
-  feeStatus,
+  parentContact,
   emergencyContact,
-  createdAt,
-  updatedAt
+  profilePhoto,
+  verified,
+  verificationDocuments
 }
 
 
@@ -185,6 +179,24 @@ Teachers:
   experience,
   createdAt,
   updatedAt
+}
+Assignments
+{
+  title,
+  description,
+  subjectId,
+  teacherId,
+  dueDate,
+  attachments,
+  createdAt
+}
+AssignmentSubmissions
+{
+  assignmentId,
+  studentId,
+  submissionUrl,
+  marks,
+  feedback
 }
 
 
@@ -218,6 +230,40 @@ Librarians:
   updatedAt
 }
 
+
+Attendance
+{
+  studentId,
+  subjectId,
+  teacherId,
+  date,
+  status
+}
+
+Departments
+{
+  name,
+  code,
+  hod
+}
+
+Grievances
+{
+  studentId,
+  title,
+  description,
+  status,
+  assignedTo
+}
+
+Subjects
+{
+  subjectCode,
+  subjectName,
+  semester,
+  credits,
+  assignedTeacher
+}
 
 
 ================================================================================
@@ -1090,6 +1136,19 @@ LIBRARIAN PERMISSIONS
 ✗ Cannot approve academic results
 ✗ Cannot manage financial transactions outside library fines
 ✗ Cannot access administrator controls
+
+5. FINANCE STAFF
+ FINANCE STAFF DASHBOARD
+ FINANCE STAFF PAGES
+ FINANCE STAFF DATABASE COLLECTION
+ FINANCE STAFF PERMISSIONS
+ 
+Include:
+Fee collection
+Transactions
+Refunds
+Payment reconciliation
+Reports
 
 ================================================================================
 DEPLOYMENT & HOSTING:
