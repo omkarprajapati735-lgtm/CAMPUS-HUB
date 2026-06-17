@@ -105,6 +105,17 @@ Socket.IO
 - Chat updates
 - Attendance updates
 
+SEARCH
+MongoDB Indexes
+
+title
+subject
+author
+noticeCategory
+studentName
+employeeId
+
+Use MongoDB Atlas Search
 ================================================================================
 Development Rules
 ================================================================================
@@ -284,238 +295,6 @@ AssignmentSubmissions
 Subjects
 Departments
 Grievances
-
-
-================================================================================
-API ARCHITECTURE
-================================================================================
-
-API ARCHITECTURE
-
-AUTH
-POST /api/auth/register
-POST /api/auth/login
-POST /api/auth/logout
-POST /api/auth/refresh-token
-POST /api/auth/forgot-password
-
-STUDENTS
-GET /api/students/profile
-PUT /api/students/profile
-
-TEACHERS
-GET /api/teachers/profile
-PUT /api/teachers/profile
-
-NOTICES
-GET /api/notices
-GET /api/notices/:id
-POST /api/notices
-PUT /api/notices/:id
-DELETE /api/notices/:id
-
-ASSIGNMENTS
-GET /api/assignments
-POST /api/assignments
-PUT /api/assignments/:id
-DELETE /api/assignments/:id
-
-ATTENDANCE
-POST /api/attendance
-GET /api/attendance/student/:id
-
-RESULTS
-GET /api/results
-POST /api/results
-
-LIBRARY
-GET /api/books
-POST /api/books
-
-FINANCE
-GET /api/payments
-POST /api/payments
-POST /api/refunds
-
-NOTIFICATIONS
-GET /api/notifications
-POST /api/notifications
-
-================================================================================
-PROJECT FOLDER STRUCTURE:
-================================================================================
-
-campus-hub-mern/
-│
-├── client/                          # React Frontend
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   │
-│   ├── src/
-│   │   ├── assets/
-│   │   │   ├── images/
-│   │   │   ├── icons/
-│   │   │   └── logos/
-│   │   │
-│   │   ├── components/
-│   │   │   ├── common/
-│   │   │   │   ├── Navbar.jsx
-│   │   │   │   ├── Sidebar.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── ProtectedRoute.jsx
-│   │   │   │   ├── Loader.jsx
-│   │   │   │   └── ErrorBoundary.jsx
-│   │   │   │
-│   │   │   ├── cards/
-│   │   │   │   ├── NoticeCard.jsx
-│   │   │   │   ├── NoteCard.jsx
-│   │   │   │   ├── ResultCard.jsx
-│   │   │   │   ├── BookCard.jsx
-│   │   │   │   └── EventCard.jsx
-│   │   │   │
-│   │   │   ├── forms/
-│   │   │   │   ├── LoginForm.jsx
-│   │   │   │   ├── RegisterForm.jsx
-│   │   │   │   ├── ProfileForm.jsx
-│   │   │   │   └── PaymentForm.jsx
-│   │   │   │
-│   │   │   └── modals/
-│   │   │       ├── ConfirmModal.jsx
-│   │   │       └── PreviewModal.jsx
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Profile.jsx
-│   │   │   ├── NoticeBoard.jsx
-│   │   │   ├── ClassroomNotes.jsx
-│   │   │   ├── TimeTable.jsx
-│   │   │   ├── LibraryPortal.jsx
-│   │   │   ├── ExamFeePortal.jsx
-│   │   │   ├── Results.jsx
-│   │   │   ├── ProgressTracking.jsx
-│   │   │   ├── ContactDirectory.jsx
-│   │   │   ├── Settings.jsx
-│   │   │   └── NotFound.jsx
-│   │   │
-│   │   ├── hooks/
-│   │   │   ├── useAuth.js
-│   │   │   ├── useFetch.js
-│   │   │   ├── useNotifications.js
-│   │   │   └── useLocalStorage.js
-│   │   │
-│   │   ├── context/
-│   │   │   ├── AuthContext.jsx
-│   │   │   ├── StudentContext.jsx
-│   │   │   └── NotificationContext.jsx
-│   │   │
-│   │   ├── services/
-│   │   │   ├── api.js (Axios instance)
-│   │   │   ├── authService.js
-│   │   │   ├── noticeService.js
-│   │   │   ├── noteService.js
-│   │   │   ├── libraryService.js
-│   │   │   ├── examService.js
-│   │   │   ├── resultService.js
-│   │   │   ├── profileService.js
-│   │   │   └── paymentService.js
-│   │   │
-│   │   ├── styles/
-│   │   │   ├── global.css
-│   │   │   ├── variables.css
-│   │   │   ├── responsive.css
-│   │   │   └── animations.css
-│   │   │
-│   │   ├── utils/
-│   │   │   ├── helpers.js
-│   │   │   ├── validators.js
-│   │   │   ├── formatters.js
-│   │   │   └── constants.js
-│   │   │
-│   │   ├── App.jsx
-│   │   └── index.js
-│   │
-│   ├── .env.example
-│   ├── package.json
-│   └── vite.config.js
-│
-├── server/                          # Express Backend
-│   ├── config/
-│   │   ├── db.js (MongoDB connection)
-│   │   ├── env.js
-│   │   └── cloudinary.js
-│   │
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── userController.js
-│   │   ├── noticeController.js
-│   │   ├── noteController.js
-│   │   ├── timetableController.js
-│   │   ├── libraryController.js
-│   │   ├── examFeeController.js
-│   │   ├── resultController.js
-│   │   ├── progressController.js
-│   │   └── notificationController.js
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── userRoutes.js
-│   │   ├── noticeRoutes.js
-│   │   ├── noteRoutes.js
-│   │   ├── timetableRoutes.js
-│   │   ├── libraryRoutes.js
-│   │   ├── examRoutes.js
-│   │   ├── resultRoutes.js
-│   │   └── notificationRoutes.js
-│   │
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Student.js
-│   │   ├── Notice.js
-│   │   ├── ClassroomNote.js
-│   │   ├── TimeTable.js
-│   │   ├── LibraryBook.js
-│   │   ├── BorrowHistory.js
-│   │   ├── ExamFee.js
-│   │   ├── Result.js
-│   │   ├── StudentProgress.js
-│   │   └── Notification.js
-│   │
-│   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   ├── roleMiddleware.js
-│   │   ├── errorHandler.js
-│   │   ├── uploadMiddleware.js
-│   │   └── validationMiddleware.js
-│   │
-│   ├── services/
-│   │   ├── authService.js
-│   │   ├── emailService.js
-│   │   ├── uploadService.js
-│   │   ├── paymentService.js
-│   │   ├── notificationService.js
-│   │   └── progressService.js
-│   │
-│   ├── validators/
-│   │   ├── authValidator.js
-│   │   ├── studentValidator.js
-│   │   └── examValidator.js
-│   │
-│   ├── jobs/
-│   │   └── scheduledTasks.js (cron jobs for notifications, reminders)
-│   │
-│   ├── tests/
-│   │   ├── auth.test.js
-│   │   ├── user.test.js
-│   │   └── notice.test.js
-│   │
-│   ├── .env.example
-│   ├── package.json
-│   └── server.js (main entry point)
-│
-└── README.md
 
 ================================================================================
 KEY USER ROLES & PERMISSIONS:
@@ -1222,6 +1001,63 @@ Refunds
 Payment reconciliation
 Reports
 
+
+================================================================================
+API ARCHITECTURE
+================================================================================
+
+API ARCHITECTURE
+
+AUTH
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/refresh-token
+POST /api/auth/forgot-password
+
+STUDENTS
+GET /api/students/profile
+PUT /api/students/profile
+
+TEACHERS
+GET /api/teachers/profile
+PUT /api/teachers/profile
+
+NOTICES
+GET /api/notices
+GET /api/notices/:id
+POST /api/notices
+PUT /api/notices/:id
+DELETE /api/notices/:id
+
+ASSIGNMENTS
+GET /api/assignments
+POST /api/assignments
+PUT /api/assignments/:id
+DELETE /api/assignments/:id
+
+ATTENDANCE
+POST /api/attendance
+GET /api/attendance/student/:id
+
+RESULTS
+GET /api/results
+POST /api/results
+
+LIBRARY
+GET /api/books
+POST /api/books
+
+FINANCE
+GET /api/payments
+POST /api/payments
+POST /api/refunds
+
+NOTIFICATIONS
+GET /api/notifications
+POST /api/notifications
+
+
 ================================================================================
 SECURITY
 ================================================================================
@@ -1261,19 +1097,181 @@ EMAIL_PASS=
 CLIENT_URL=
 
 ================================================================================
-SEARCH
+PROJECT FOLDER STRUCTURE:
 ================================================================================
 
-MongoDB Indexes
+campus-hub-mern/
+│
+├── client/                          # React Frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── images/
+│   │   │   ├── icons/
+│   │   │   └── logos/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── ProtectedRoute.jsx
+│   │   │   │   ├── Loader.jsx
+│   │   │   │   └── ErrorBoundary.jsx
+│   │   │   │
+│   │   │   ├── cards/
+│   │   │   │   ├── NoticeCard.jsx
+│   │   │   │   ├── NoteCard.jsx
+│   │   │   │   ├── ResultCard.jsx
+│   │   │   │   ├── BookCard.jsx
+│   │   │   │   └── EventCard.jsx
+│   │   │   │
+│   │   │   ├── forms/
+│   │   │   │   ├── LoginForm.jsx
+│   │   │   │   ├── RegisterForm.jsx
+│   │   │   │   ├── ProfileForm.jsx
+│   │   │   │   └── PaymentForm.jsx
+│   │   │   │
+│   │   │   └── modals/
+│   │   │       ├── ConfirmModal.jsx
+│   │   │       └── PreviewModal.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   ├── NoticeBoard.jsx
+│   │   │   ├── ClassroomNotes.jsx
+│   │   │   ├── TimeTable.jsx
+│   │   │   ├── LibraryPortal.jsx
+│   │   │   ├── ExamFeePortal.jsx
+│   │   │   ├── Results.jsx
+│   │   │   ├── ProgressTracking.jsx
+│   │   │   ├── ContactDirectory.jsx
+│   │   │   ├── Settings.jsx
+│   │   │   └── NotFound.jsx
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   ├── useFetch.js
+│   │   │   ├── useNotifications.js
+│   │   │   └── useLocalStorage.js
+│   │   │
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   ├── StudentContext.jsx
+│   │   │   └── NotificationContext.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.js (Axios instance)
+│   │   │   ├── authService.js
+│   │   │   ├── noticeService.js
+│   │   │   ├── noteService.js
+│   │   │   ├── libraryService.js
+│   │   │   ├── examService.js
+│   │   │   ├── resultService.js
+│   │   │   ├── profileService.js
+│   │   │   └── paymentService.js
+│   │   │
+│   │   ├── styles/
+│   │   │   ├── global.css
+│   │   │   ├── variables.css
+│   │   │   ├── responsive.css
+│   │   │   └── animations.css
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── helpers.js
+│   │   │   ├── validators.js
+│   │   │   ├── formatters.js
+│   │   │   └── constants.js
+│   │   │
+│   │   ├── App.jsx
+│   │   └── index.js
+│   │
+│   ├── .env.example
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/                          # Express Backend
+│   ├── config/
+│   │   ├── db.js (MongoDB connection)
+│   │   ├── env.js
+│   │   └── cloudinary.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   ├── noticeController.js
+│   │   ├── noteController.js
+│   │   ├── timetableController.js
+│   │   ├── libraryController.js
+│   │   ├── examFeeController.js
+│   │   ├── resultController.js
+│   │   ├── progressController.js
+│   │   └── notificationController.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   │   ├── noticeRoutes.js
+│   │   ├── noteRoutes.js
+│   │   ├── timetableRoutes.js
+│   │   ├── libraryRoutes.js
+│   │   ├── examRoutes.js
+│   │   ├── resultRoutes.js
+│   │   └── notificationRoutes.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Student.js
+│   │   ├── Notice.js
+│   │   ├── ClassroomNote.js
+│   │   ├── TimeTable.js
+│   │   ├── LibraryBook.js
+│   │   ├── BorrowHistory.js
+│   │   ├── ExamFee.js
+│   │   ├── Result.js
+│   │   ├── StudentProgress.js
+│   │   └── Notification.js
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   ├── roleMiddleware.js
+│   │   ├── errorHandler.js
+│   │   ├── uploadMiddleware.js
+│   │   └── validationMiddleware.js
+│   │
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── emailService.js
+│   │   ├── uploadService.js
+│   │   ├── paymentService.js
+│   │   ├── notificationService.js
+│   │   └── progressService.js
+│   │
+│   ├── validators/
+│   │   ├── authValidator.js
+│   │   ├── studentValidator.js
+│   │   └── examValidator.js
+│   │
+│   ├── jobs/
+│   │   └── scheduledTasks.js (cron jobs for notifications, reminders)
+│   │
+│   ├── tests/
+│   │   ├── auth.test.js
+│   │   ├── user.test.js
+│   │   └── notice.test.js
+│   │
+│   ├── .env.example
+│   ├── package.json
+│   └── server.js (main entry point)
+│
+└── README.md
 
-title
-subject
-author
-noticeCategory
-studentName
-employeeId
-
-Use MongoDB Atlas Search
 
 ================================================================================
 DEPLOYMENT & HOSTING:
