@@ -105,63 +105,6 @@ Socket.IO
 - Chat updates
 - Attendance updates
 
-
-
-================================================================================
-API ARCHITECTURE
-================================================================================
-
-API ARCHITECTURE
-
-AUTH
-POST /api/auth/register
-POST /api/auth/login
-POST /api/auth/logout
-POST /api/auth/refresh-token
-POST /api/auth/forgot-password
-
-STUDENTS
-GET /api/students/profile
-PUT /api/students/profile
-
-TEACHERS
-GET /api/teachers/profile
-PUT /api/teachers/profile
-
-NOTICES
-GET /api/notices
-GET /api/notices/:id
-POST /api/notices
-PUT /api/notices/:id
-DELETE /api/notices/:id
-
-ASSIGNMENTS
-GET /api/assignments
-POST /api/assignments
-PUT /api/assignments/:id
-DELETE /api/assignments/:id
-
-ATTENDANCE
-POST /api/attendance
-GET /api/attendance/student/:id
-
-RESULTS
-GET /api/results
-POST /api/results
-
-LIBRARY
-GET /api/books
-POST /api/books
-
-FINANCE
-GET /api/payments
-POST /api/payments
-POST /api/refunds
-
-NOTIFICATIONS
-GET /api/notifications
-POST /api/notifications
-
 ================================================================================
 Development Rules
 ================================================================================
@@ -342,6 +285,61 @@ Subjects
 Departments
 Grievances
 
+
+================================================================================
+API ARCHITECTURE
+================================================================================
+
+API ARCHITECTURE
+
+AUTH
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/refresh-token
+POST /api/auth/forgot-password
+
+STUDENTS
+GET /api/students/profile
+PUT /api/students/profile
+
+TEACHERS
+GET /api/teachers/profile
+PUT /api/teachers/profile
+
+NOTICES
+GET /api/notices
+GET /api/notices/:id
+POST /api/notices
+PUT /api/notices/:id
+DELETE /api/notices/:id
+
+ASSIGNMENTS
+GET /api/assignments
+POST /api/assignments
+PUT /api/assignments/:id
+DELETE /api/assignments/:id
+
+ATTENDANCE
+POST /api/attendance
+GET /api/attendance/student/:id
+
+RESULTS
+GET /api/results
+POST /api/results
+
+LIBRARY
+GET /api/books
+POST /api/books
+
+FINANCE
+GET /api/payments
+POST /api/payments
+POST /api/refunds
+
+NOTIFICATIONS
+GET /api/notifications
+POST /api/notifications
 
 ================================================================================
 PROJECT FOLDER STRUCTURE:
