@@ -136,165 +136,6 @@ DEVELOPMENT RULES
 ✓ Use Zod Validation
 ✓ Use TypeScript Preferred
 
-================================================================================
-DATA BASE AS PER USER ROLES (Mongo DB):
-================================================================================
-STUDENT DATABASE COLLECTION
-Students
-{
-  userId,
-  rollNumber,
-  registrationNumber,
-  fullName,
-  email,
-  phone,
-  department,
-  semester,
-  batch,
-  attendancePercentage,
-  currentGPA,
-  currentCGPA,
-  parentContact,
-  emergencyContact,
-  profilePhoto,
-  verified,
-  verificationDocuments
-}
-
-
-TEACHER DATABASE COLLECTION
-Teachers:
-{
-  _id,
-  userId,
-  employeeId,
-  fullName,
-  email,
-  phone,
-  department,
-  designation,
-  assignedSubjects,
-  profilePhoto,
-  joiningDate,
-  qualifications,
-  experience,
-  createdAt,
-  updatedAt
-}
-Assignments
-{
-  title,
-  description,
-  subjectId,
-  teacherId,
-  dueDate,
-  attachments,
-  createdAt
-}
-AssignmentSubmissions
-{
-  assignmentId,
-  studentId,
-  submissionUrl,
-  marks,
-  feedback
-}
-
-
-ADMINISTRATIVE OFFICER DATABASE COLLECTION
-AdministrativeOfficers:
-{
-  _id,
-  userId,
-  employeeId,
-  designation,
-  department,
-  officeLocation,
-  contactNumber,
-  permissions,
-  createdAt,
-  updatedAt
-}
-
-LIBRARIAN DATABASE COLLECTION
-Librarians:
-{
-  _id,
-  userId,
-  employeeId,
-  librarianName,
-  department,
-  contactNumber,
-  assignedLibrary,
-  permissions,
-  createdAt,
-  updatedAt
-}
-
-
-Attendance
-{
-  studentId,
-  subjectId,
-  teacherId,
-  date,
-  status
-}
-
-Departments
-{
-  name,
-  code,
-  hod
-}
-
-Grievances
-{
-  studentId,
-  title,
-  description,
-  status,
-  assignedTo
-}
-
-Subjects
-{
-  subjectCode,
-  subjectName,
-  semester,
-  credits,
-  assignedTeacher
-}
-
-NotificationPreferences
-{
- userId,
- emailEnabled,
- pushEnabled,
- smsEnabled
-}
-
-Search Architecture
-MongoDB indexes:
-
-title
-subject
-author
-noticeCategory
-
-Administrators
-FinanceStaff
-Transactions
-Refunds
-AuditLogs
-Chats
-Certificates
-Attendance
-Assignments
-AssignmentSubmissions
-Subjects
-Departments
-Grievances
 
 ================================================================================
 KEY USER ROLES & PERMISSIONS:
@@ -1000,6 +841,167 @@ Transactions
 Refunds
 Payment reconciliation
 Reports
+
+================================================================================
+DATA BASE AS PER USER ROLES (Mongo DB):
+================================================================================
+STUDENT DATABASE COLLECTION
+Students
+{
+  userId,
+  rollNumber,
+  registrationNumber,
+  fullName,
+  email,
+  phone,
+  department,
+  semester,
+  batch,
+  attendancePercentage,
+  currentGPA,
+  currentCGPA,
+  parentContact,
+  emergencyContact,
+  profilePhoto,
+  verified,
+  verificationDocuments
+}
+
+
+TEACHER DATABASE COLLECTION
+Teachers:
+{
+  _id,
+  userId,
+  employeeId,
+  fullName,
+  email,
+  phone,
+  department,
+  designation,
+  assignedSubjects,
+  profilePhoto,
+  joiningDate,
+  qualifications,
+  experience,
+  createdAt,
+  updatedAt
+}
+Assignments
+{
+  title,
+  description,
+  subjectId,
+  teacherId,
+  dueDate,
+  attachments,
+  createdAt
+}
+AssignmentSubmissions
+{
+  assignmentId,
+  studentId,
+  submissionUrl,
+  marks,
+  feedback
+}
+
+
+ADMINISTRATIVE OFFICER DATABASE COLLECTION
+AdministrativeOfficers:
+{
+  _id,
+  userId,
+  employeeId,
+  designation,
+  department,
+  officeLocation,
+  contactNumber,
+  permissions,
+  createdAt,
+  updatedAt
+}
+
+LIBRARIAN DATABASE COLLECTION
+Librarians:
+{
+  _id,
+  userId,
+  employeeId,
+  librarianName,
+  department,
+  contactNumber,
+  assignedLibrary,
+  permissions,
+  createdAt,
+  updatedAt
+}
+
+
+Attendance
+{
+  studentId,
+  subjectId,
+  teacherId,
+  date,
+  status
+}
+
+Departments
+{
+  name,
+  code,
+  hod
+}
+
+Grievances
+{
+  studentId,
+  title,
+  description,
+  status,
+  assignedTo
+}
+
+Subjects
+{
+  subjectCode,
+  subjectName,
+  semester,
+  credits,
+  assignedTeacher
+}
+
+NotificationPreferences
+{
+ userId,
+ emailEnabled,
+ pushEnabled,
+ smsEnabled
+}
+
+Search Architecture
+MongoDB indexes:
+
+title
+subject
+author
+noticeCategory
+
+Administrators
+FinanceStaff
+Transactions
+Refunds
+AuditLogs
+Chats
+Certificates
+Attendance
+Assignments
+AssignmentSubmissions
+Subjects
+Departments
+Grievances
+
 
 
 ================================================================================
