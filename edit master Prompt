@@ -69,6 +69,29 @@ FRONTEND:
   • Context API / Redux - State management
   • CSS3 / Tailwind CSS - Styling and responsive design
   • Chart.js / Recharts - For progress and analytics charts
+Frontend Framework:
+Next.js 15 (App Router)
+
+Language:
+TypeScript
+
+State Management:
+Redux Toolkit + RTK Query
+
+Forms:
+React Hook Form + Zod
+
+UI Components:
+Shadcn/UI
+
+Icons:
+Lucide React
+
+Charts:
+Recharts
+
+Tables:
+TanStack Table
 
 BACKEND:
   • Node.js - JavaScript runtime
@@ -921,6 +944,27 @@ AdministrativeOfficers:
   createdAt,
   updatedAt
 }
+Administrators
+{
+  _id,
+  userId,
+  employeeId,
+  fullName,
+  permissions,
+  createdAt,
+  updatedAt
+}
+Transactions
+{
+  _id,
+  studentId,
+  feeType,
+  amount,
+  paymentMethod,
+  transactionId,
+  status,
+  paidAt
+}
 
 LIBRARIAN DATABASE COLLECTION
 Librarians:
@@ -1059,6 +1103,22 @@ NOTIFICATIONS
 GET /api/notifications
 POST /api/notifications
 
+API RESPONSE FORMAT
+
+Success:
+{
+  success: true,
+  message: string,
+  data: object
+}
+
+Error:
+{
+  success: false,
+  message: string,
+  errors: []
+}
+
 
 ================================================================================
 SECURITY
@@ -1103,176 +1163,116 @@ PROJECT FOLDER STRUCTURE:
 ================================================================================
 
 campus-hub-mern/
+
+
+frontend
+├──client/
 │
-├── client/                          # React Frontend
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   │
-│   ├── src/
-│   │   ├── assets/
-│   │   │   ├── images/
-│   │   │   ├── icons/
-│   │   │   └── logos/
-│   │   │
-│   │   ├── components/
-│   │   │   ├── common/
-│   │   │   │   ├── Navbar.jsx
-│   │   │   │   ├── Sidebar.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── ProtectedRoute.jsx
-│   │   │   │   ├── Loader.jsx
-│   │   │   │   └── ErrorBoundary.jsx
-│   │   │   │
-│   │   │   ├── cards/
-│   │   │   │   ├── NoticeCard.jsx
-│   │   │   │   ├── NoteCard.jsx
-│   │   │   │   ├── ResultCard.jsx
-│   │   │   │   ├── BookCard.jsx
-│   │   │   │   └── EventCard.jsx
-│   │   │   │
-│   │   │   ├── forms/
-│   │   │   │   ├── LoginForm.jsx
-│   │   │   │   ├── RegisterForm.jsx
-│   │   │   │   ├── ProfileForm.jsx
-│   │   │   │   └── PaymentForm.jsx
-│   │   │   │
-│   │   │   └── modals/
-│   │   │       ├── ConfirmModal.jsx
-│   │   │       └── PreviewModal.jsx
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Profile.jsx
-│   │   │   ├── NoticeBoard.jsx
-│   │   │   ├── ClassroomNotes.jsx
-│   │   │   ├── TimeTable.jsx
-│   │   │   ├── LibraryPortal.jsx
-│   │   │   ├── ExamFeePortal.jsx
-│   │   │   ├── Results.jsx
-│   │   │   ├── ProgressTracking.jsx
-│   │   │   ├── ContactDirectory.jsx
-│   │   │   ├── Settings.jsx
-│   │   │   └── NotFound.jsx
-│   │   │
-│   │   ├── hooks/
-│   │   │   ├── useAuth.js
-│   │   │   ├── useFetch.js
-│   │   │   ├── useNotifications.js
-│   │   │   └── useLocalStorage.js
-│   │   │
-│   │   ├── context/
-│   │   │   ├── AuthContext.jsx
-│   │   │   ├── StudentContext.jsx
-│   │   │   └── NotificationContext.jsx
-│   │   │
-│   │   ├── services/
-│   │   │   ├── api.js (Axios instance)
-│   │   │   ├── authService.js
-│   │   │   ├── noticeService.js
-│   │   │   ├── noteService.js
-│   │   │   ├── libraryService.js
-│   │   │   ├── examService.js
-│   │   │   ├── resultService.js
-│   │   │   ├── profileService.js
-│   │   │   └── paymentService.js
-│   │   │
-│   │   ├── styles/
-│   │   │   ├── global.css
-│   │   │   ├── variables.css
-│   │   │   ├── responsive.css
-│   │   │   └── animations.css
-│   │   │
-│   │   ├── utils/
-│   │   │   ├── helpers.js
-│   │   │   ├── validators.js
-│   │   │   ├── formatters.js
-│   │   │   └── constants.js
-│   │   │
-│   │   ├── App.jsx
-│   │   └── index.js
-│   │
-│   ├── .env.example
-│   ├── package.json
-│   └── vite.config.js
+├── src/
 │
-├── server/                          # Express Backend
-│   ├── config/
-│   │   ├── db.js (MongoDB connection)
-│   │   ├── env.js
-│   │   └── cloudinary.js
-│   │
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── userController.js
-│   │   ├── noticeController.js
-│   │   ├── noteController.js
-│   │   ├── timetableController.js
-│   │   ├── libraryController.js
-│   │   ├── examFeeController.js
-│   │   ├── resultController.js
-│   │   ├── progressController.js
-│   │   └── notificationController.js
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── userRoutes.js
-│   │   ├── noticeRoutes.js
-│   │   ├── noteRoutes.js
-│   │   ├── timetableRoutes.js
-│   │   ├── libraryRoutes.js
-│   │   ├── examRoutes.js
-│   │   ├── resultRoutes.js
-│   │   └── notificationRoutes.js
-│   │
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Student.js
-│   │   ├── Notice.js
-│   │   ├── ClassroomNote.js
-│   │   ├── TimeTable.js
-│   │   ├── LibraryBook.js
-│   │   ├── BorrowHistory.js
-│   │   ├── ExamFee.js
-│   │   ├── Result.js
-│   │   ├── StudentProgress.js
-│   │   └── Notification.js
-│   │
-│   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   ├── roleMiddleware.js
-│   │   ├── errorHandler.js
-│   │   ├── uploadMiddleware.js
-│   │   └── validationMiddleware.js
-│   │
-│   ├── services/
-│   │   ├── authService.js
-│   │   ├── emailService.js
-│   │   ├── uploadService.js
-│   │   ├── paymentService.js
-│   │   ├── notificationService.js
-│   │   └── progressService.js
-│   │
-│   ├── validators/
-│   │   ├── authValidator.js
-│   │   ├── studentValidator.js
-│   │   └── examValidator.js
-│   │
-│   ├── jobs/
-│   │   └── scheduledTasks.js (cron jobs for notifications, reminders)
-│   │
-│   ├── tests/
-│   │   ├── auth.test.js
-│   │   ├── user.test.js
-│   │   └── notice.test.js
-│   │
-│   ├── .env.example
-│   ├── package.json
-│   └── server.js (main entry point)
+├── app/
+│   ├── store.ts
+│   ├── providers.tsx
+│   ├── routes.tsx
 │
-└── README.md
+├── features/
+│
+│   ├── auth/
+│   ├── dashboard/
+│   ├── students/
+│   ├── teachers/
+│   ├── administrators/
+│   ├── admin-officers/
+│   ├── librarians/
+│   ├── finance/
+│   ├── notices/
+│   ├── attendance/
+│   ├── assignments/
+│   ├── results/
+│   ├── timetable/
+│   ├── library/
+│   ├── certificates/
+│   ├── grievances/
+│   ├── notifications/
+│   ├── chats/
+│   └── reports/
+│
+├── components/
+│   ├── ui/
+│   ├── shared/
+│
+├── layouts/
+│
+├── hooks/
+│
+├── services/
+│
+├── lib/
+│
+├── utils/
+│
+├── types/
+│
+├── assets/
+│
+├── styles/
+│
+└── main.tsx
+
+Backend
+
+server/
+│
+├── src/
+│
+├── config/
+│   ├── database.ts
+│   ├── cloudinary.ts
+│   ├── socket.ts
+│   ├── env.ts
+│
+├── middleware/
+│   ├── auth.middleware.ts
+│   ├── role.middleware.ts
+│   ├── error.middleware.ts
+│   ├── validation.middleware.ts
+│
+├── modules/
+│
+│   ├── auth/
+│   ├── users/
+│   ├── students/
+│   ├── teachers/
+│   ├── administrators/
+│   ├── admin-officers/
+│   ├── librarians/
+│   ├── finance/
+│   ├── notices/
+│   ├── announcements/
+│   ├── attendance/
+│   ├── assignments/
+│   ├── results/
+│   ├── timetable/
+│   ├── library/
+│   ├── certificates/
+│   ├── grievances/
+│   ├── notifications/
+│   ├── chats/
+│   ├── reports/
+│   └── analytics/
+│
+├── shared/
+│   ├── constants/
+│   ├── helpers/
+│   ├── utils/
+│   ├── types/
+│
+├── jobs/
+│
+├── tests/
+│
+├── app.ts
+└── server.ts
 
 
 ================================================================================
@@ -1305,3 +1305,22 @@ RECOMMENDED OPTIONS:
    - Complete control
    - One-time investment
    - Requires maintenance
+
+================================================================================
+AI GENERATION RULES
+================================================================================
+
+
+✓ Generate production-ready code
+✓ Use TypeScript everywhere
+✓ Follow Feature-Based Architecture
+✓ Avoid code duplication
+✓ Create reusable components
+✓ Implement responsive design
+✓ Implement proper error handling
+✓ Implement loading states
+✓ Implement form validation
+✓ Implement role-based authorization
+✓ Follow REST API conventions
+✓ Use environment variables
+✓ Write clean, documented code
