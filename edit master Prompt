@@ -181,6 +181,25 @@ DEVELOPMENT RULES
 ✓ Use Zod Validation
 ✓ Use TypeScript Preferred
 
+================================================================================
+ROUTES
+================================================================================
+
+/student/dashboard
+/student/profile
+
+/teacher/dashboard
+/teacher/assignments
+
+/admin/dashboard
+/admin/users
+
+/librarian/dashboard
+/library/books
+
+/finance/dashboard
+/finance/payments
+
 
 ================================================================================
 KEY USER ROLES & PERMISSIONS:
