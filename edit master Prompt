@@ -1119,6 +1119,86 @@ Certificates
   issuedBy
 }
 
+Notices
+{
+  _id,
+  title,
+  description,
+  category,
+  attachments,
+  createdBy,
+  targetRoles,
+  isPublished,
+  createdAt,
+  updatedAt
+}
+
+Results
+{
+  _id,
+  studentId,
+  subjectId,
+  semester,
+  marksObtained,
+  totalMarks,
+  grade,
+  gpa,
+  publishedBy,
+  createdAt
+}
+
+Books
+{
+  _id,
+  title,
+  author,
+  isbn,
+  category,
+  quantity,
+  availableQuantity,
+  location,
+  coverImage,
+  createdAt
+}
+
+BorrowRecords
+{
+  _id,
+  studentId,
+  bookId,
+  issueDate,
+  dueDate,
+  returnDate,
+  fineAmount,
+  status
+}
+
+Timetables
+{
+  _id,
+  subjectId,
+  teacherId,
+  classroom,
+  day,
+  startTime,
+  endTime,
+  semester
+}
+
+Users
+{
+  _id,
+  fullName,
+  email,
+  password,
+  role,
+  isVerified,
+  status,
+  profilePhoto,
+  createdAt,
+  updatedAt
+}
+
 ================================================================================
 ROLE ACCESS MATRIX
 ================================================================================
