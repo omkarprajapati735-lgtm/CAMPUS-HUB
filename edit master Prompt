@@ -884,6 +884,35 @@ Payment reconciliation
 Reports
 
 ================================================================================
+Add Explicit Relationships
+================================================================================
+RELATIONSHIPS
+
+User 1 → 1 Student
+
+User 1 → 1 Teacher
+
+User 1 → 1 Librarian
+
+User 1 → 1 FinanceStaff
+
+Department 1 → Many Students
+
+Department 1 → Many Teachers
+
+Subject 1 → Many Students
+
+Teacher 1 → Many Subjects
+
+Student 1 → Many Results
+
+Student 1 → Many BorrowRecords
+
+Student 1 → Many Notifications
+
+Student 1 → Many Assignments
+
+================================================================================
 DATA BASE AS PER USER ROLES (Mongo DB):
 ================================================================================
 STUDENT DATABASE COLLECTION
