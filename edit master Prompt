@@ -1229,6 +1229,41 @@ Users
 }
 
 ================================================================================
+STATUS ENUMS
+================================================================================
+
+STATUS ENUMS
+
+Student Status:
+ACTIVE
+INACTIVE
+GRADUATED
+SUSPENDED
+
+Fee Status:
+PENDING
+PAID
+FAILED
+REFUNDED
+
+Book Status:
+AVAILABLE
+BORROWED
+LOST
+DAMAGED
+
+Assignment Status:
+PENDING
+SUBMITTED
+GRADED
+
+Grievance Status:
+OPEN
+IN_PROGRESS
+RESOLVED
+REJECTED
+
+================================================================================
 ROLE ACCESS MATRIX
 ================================================================================
 
