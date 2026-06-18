@@ -113,7 +113,6 @@ TECHNOLOGY STACK - MERN:
 FRONTEND:
   • Next.js - Interactive UI and components
   • Axios - HTTP client for API calls
-  • React Router - Page navigation
   • CSS3 / Tailwind CSS - Styling and responsive design
   • Chart.js / Recharts - For progress and analytics charts
 Frontend Framework:
@@ -914,9 +913,27 @@ LIBRARIAN PERMISSIONS
 
 5. FINANCE STAFF
  FINANCE STAFF DASHBOARD
+✓ Total Revenue
+✓ Pending Payments
+✓ Failed Transactions
+✓ Refund Requests
+✓ Monthly Collection
+✓ Fee Statistics
+
  FINANCE STAFF PAGES
- FINANCE STAFF DATABASE COLLECTION
+✓ Finance Dashboard
+✓ Fee Management
+✓ Transactions
+✓ Refund Management
+✓ Payment Reports
+✓ Receipts
+
  FINANCE STAFF PERMISSIONS
+✓ Manage Fees
+✓ Verify Payments
+✓ Process Refunds
+✓ Generate Reports
+✓ View Student Payment History
  
 Include:
 Fee collection
@@ -1317,6 +1334,45 @@ RESOLVED
 REJECTED
 
 ================================================================================
+FILE MANAGEMENT
+================================================================================
+
+Supported Formats
+
+Images
+- jpg
+- jpeg
+- png
+- webp
+
+Documents
+- pdf
+- docx
+- xlsx
+- pptx
+
+Maximum File Size
+- 20 MB
+
+Storage Provider
+- Cloudinary
+
+Validation Required
+- Yes
+
+================================================================================
+NOTIFICATION CHANNELS
+================================================================================
+
+✓ In-App Notifications
+✓ Email Notifications
+✓ Socket.IO Real-Time Notifications
+
+Future Support
+✓ Push Notifications
+✓ SMS Notifications
+
+================================================================================
 ROLE ACCESS MATRIX
 ================================================================================
 
@@ -1417,6 +1473,21 @@ NOTIFICATIONS
 GET /api/notifications
 POST /api/notifications
 
+USERS APIs
+ADMIN APIs
+ADMIN OFFICER APIs
+LIBRARIAN APIs
+FINANCE APIs
+BOOK APIs
+BORROW APIs
+CHAT APIs
+CERTIFICATE APIs
+GRIEVANCE APIs
+REPORT APIs
+TIMETABLE APIs
+SUBJECT APIs
+DEPARTMENT APIs
+
 ================================================================================
 API RESPONSE FORMAT
 ================================================================================
@@ -1444,6 +1515,55 @@ All List APIs Must Support:
 ?search=
 ?sort=
 ?order=asc|desc
+
+================================================================================
+API DOCUMENTATION
+================================================================================
+
+✓ Swagger/OpenAPI
+
+Requirements:
+
+Auto-generated documentation
+
+/api/docs
+
+All endpoints documented
+
+================================================================================
+SEED DATA
+================================================================================
+
+Administrator
+admin@campushub.com
+
+Teacher
+teacher@campushub.com
+
+Student
+student@campushub.com
+
+Librarian
+librarian@campushub.com
+
+Finance
+finance@campushub.com
+
+Default Password:
+Admin@123
+
+================================================================================
+CI/CD
+================================================================================
+
+✓ GitHub Actions
+
+Pipeline:
+
+Lint
+→ Test
+→ Build
+→ Deploy
 
 ================================================================================
 SECURITY
