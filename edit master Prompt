@@ -81,14 +81,35 @@ OUT OF SCOPE
 ✗ Parent Portal
 
 ================================================================================
+IMPLEMENTATION PRIORITY
+================================================================================
+
+Phase 1
+✓ Authentication
+✓ RBAC
+✓ Student Module
+✓ Teacher Module
+
+Phase 2
+✓ Library Module
+✓ Results Module
+✓ Finance Module
+
+Phase 3
+✓ Certificates
+✓ Grievances
+✓ Notifications
+✓ Chat
+
+Phase 4
+✓ Analytics
+✓ Reports
+✓ Audit Logs
+
+================================================================================
 TECHNOLOGY STACK - MERN:
 ================================================================================
 
-================================================================================
-FRONTEND TECHNOLOGY STACK
-================================================================================
-
-Framework:
 Next.js 15 (App Router)
 
 Language:
@@ -194,6 +215,25 @@ DEVELOPMENT RULES
 ✓ Use Environment Variables for Configuration
 ✓ Implement Global Error Handling
 ✓ Implement Logging and Audit Trails
+
+================================================================================
+ROUTES
+================================================================================
+
+/student/dashboard
+/student/profile
+
+/teacher/dashboard
+/teacher/assignments
+
+/admin/dashboard
+/admin/users
+
+/librarian/dashboard
+/library/books
+
+/finance/dashboard
+/finance/payments
 
 
 ================================================================================
@@ -392,7 +432,6 @@ Fee Categories
 ✓ Examination Fees
 ✓ Library Fees
 ✓ Laboratory Fees
-✓ Hostel Fees
 ✓ Miscellaneous Fees
 
 RESULTS & ANALYTICS
@@ -457,7 +496,7 @@ TEACHER ROLE & PERMISSIONS
    - View student academic progress
    - Schedule classes and assessments
    - Communicate with students
-   - Access teaching analytics and reports+
+   - Access teaching analytics and reports
 
 TEACHER PAGES
 ✓ Teacher Dashboard
@@ -537,12 +576,7 @@ CLASSROOM NOTES FEATURES
 ✓ Student Access Tracking
 Supported Formats
 ✓ PDF
-✓ DOCX
-✓ PPTX
-✓ XLSX
-✓ ZIP
 ✓ Images
-✓ Video Links
 Material Categories
 ✓ Lecture Notes
 ✓ Assignments
@@ -934,7 +968,6 @@ LIBRARIAN PERMISSIONS
 
 ================================================================================
 5. FINANCE STAFF
-================================================================================
 
 ROLE & PERMISSIONS
 
@@ -963,6 +996,29 @@ Display:
 ✓ Recent Transactions
 ✓ Payment Status Summary
 
+ FINANCE STAFF DASHBOARD
+✓ Total Revenue
+✓ Pending Payments
+✓ Failed Transactions
+✓ Refund Requests
+✓ Monthly Collection
+✓ Fee Statistics
+
+ FINANCE STAFF PAGES
+✓ Finance Dashboard
+✓ Fee Management
+✓ Transactions
+✓ Refund Management
+✓ Payment Reports
+✓ Receipts
+
+ FINANCE STAFF PERMISSIONS
+✓ Manage Fees
+✓ Verify Payments
+✓ Process Refunds
+✓ Generate Reports
+✓ View Student Payment History
+ 
 Include:
 
 ✓ Quick Action Cards
@@ -1111,6 +1167,35 @@ FINANCE STAFF PERMISSIONS
 ✗ Cannot Manage System Settings
 ✗ Cannot Modify Academic Results
 ✗ Cannot Manage Library Inventory
+
+================================================================================
+Add Explicit Relationships
+================================================================================
+RELATIONSHIPS
+
+User 1 → 1 Student
+
+User 1 → 1 Teacher
+
+User 1 → 1 Librarian
+
+User 1 → 1 FinanceStaff
+
+Department 1 → Many Students
+
+Department 1 → Many Teachers
+
+Subject 1 → Many Students
+
+Teacher 1 → Many Subjects
+
+Student 1 → Many Results
+
+Student 1 → Many BorrowRecords
+
+Student 1 → Many Notifications
+
+Student 1 → Many Assignments
 
 ================================================================================
 DATA BASE AS PER USER ROLES (Mongo DB):
@@ -1348,6 +1433,171 @@ Certificates
   issuedBy
 }
 
+Notices
+{
+  _id,
+  title,
+  description,
+  category,
+  attachments,
+  createdBy,
+  targetRoles,
+  isPublished,
+  createdAt,
+  updatedAt
+}
+
+Results
+{
+  _id,
+  studentId,
+  subjectId,
+  semester,
+  marksObtained,
+  totalMarks,
+  grade,
+  gpa,
+  publishedBy,
+  createdAt
+}
+
+Books
+{
+  _id,
+  title,
+  author,
+  isbn,
+  category,
+  quantity,
+  availableQuantity,
+  location,
+  coverImage,
+  createdAt
+}
+
+BorrowRecords
+{
+  _id,
+  studentId,
+  bookId,
+  issueDate,
+  dueDate,
+  returnDate,
+  fineAmount,
+  status
+}
+
+Timetables
+{
+  _id,
+  subjectId,
+  teacherId,
+  classroom,
+  day,
+  startTime,
+  endTime,
+  semester
+}
+
+Users
+{
+  _id,
+  fullName,
+  email,
+  password,
+  role,
+  isVerified,
+  status,
+  profilePhoto,
+  createdAt,
+  updatedAt
+}
+
+Notifications
+{
+  _id,
+  recipientId,
+  title,
+  message,
+  category,
+  isRead,
+  createdAt
+}
+
+================================================================================
+STATUS ENUMS
+================================================================================
+
+STATUS ENUMS
+
+Student Status:
+ACTIVE
+INACTIVE
+GRADUATED
+SUSPENDED
+
+Fee Status:
+PENDING
+PAID
+FAILED
+REFUNDED
+
+Book Status:
+AVAILABLE
+BORROWED
+LOST
+DAMAGED
+
+Assignment Status:
+PENDING
+SUBMITTED
+GRADED
+
+Grievance Status:
+OPEN
+IN_PROGRESS
+RESOLVED
+REJECTED
+
+================================================================================
+FILE MANAGEMENT
+================================================================================
+
+Supported Formats
+
+Images
+- jpg
+- jpeg
+- png
+- webp
+
+Documents
+- pdf
+- docx
+- xlsx
+- pptx
+
+Maximum File Size
+- 20 MB
+
+Storage Provider
+- Cloudinary
+
+Validation Required
+- Yes
+
+================================================================================
+NOTIFICATION CHANNELS
+================================================================================
+
+✓ In-App Notifications
+✓ Email Notifications
+✓ Socket.IO Real-Time Notifications
+
+Future Support
+✓ Push Notifications
+✓ SMS Notifications
+
 ================================================================================
 ROLE ACCESS MATRIX
 ================================================================================
@@ -1382,7 +1632,7 @@ One number
 One special character
 
 Phone:
-10-15 digits
+10-12 digits
 
 Roll Number:
 Unique
@@ -1556,7 +1806,24 @@ NOTIFICATIONS
 GET /api/notifications
 POST /api/notifications
 
+USERS APIs
+ADMIN APIs
+ADMIN OFFICER APIs
+LIBRARIAN APIs
+FINANCE APIs
+BOOK APIs
+BORROW APIs
+CHAT APIs
+CERTIFICATE APIs
+GRIEVANCE APIs
+REPORT APIs
+TIMETABLE APIs
+SUBJECT APIs
+DEPARTMENT APIs
+
+================================================================================
 API RESPONSE FORMAT
+================================================================================
 
 Success:
 {
@@ -1572,6 +1839,64 @@ Error:
   errors: []
 }
 
+================================================================================
+All List APIs Must Support:
+================================================================================
+
+?page=1
+?limit=20
+?search=
+?sort=
+?order=asc|desc
+
+================================================================================
+API DOCUMENTATION
+================================================================================
+
+✓ Swagger/OpenAPI
+
+Requirements:
+
+Auto-generated documentation
+
+/api/docs
+
+All endpoints documented
+
+================================================================================
+SEED DATA
+================================================================================
+
+Administrator
+admin@campushub.com
+
+Teacher
+teacher@campushub.com
+
+Student
+student@campushub.com
+
+Librarian
+librarian@campushub.com
+
+Finance
+finance@campushub.com
+
+Default Password:
+Admin@123
+
+================================================================================
+CI/CD
+================================================================================
+
+✓ GitHub Actions
+
+Pipeline:
+
+Lint
+→ Test
+→ Build
+→ Deploy
 
 ================================================================================
 SECURITY
@@ -1736,6 +2061,20 @@ modules/
 ├── app.ts
 └── server.ts
 
+================================================================================
+TESTING REQUIREMENTS
+================================================================================
+
+Frontend:
+✓ Vitest
+✓ React Testing Library
+
+Backend:
+✓ Jest
+✓ Supertest
+
+Coverage:
+Minimum 80%
 
 ================================================================================
 DEPLOYMENT & HOSTING:
