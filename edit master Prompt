@@ -110,12 +110,6 @@ Phase 4
 TECHNOLOGY STACK - MERN:
 ================================================================================
 
-FRONTEND:
-  • Next.js - Interactive UI and components
-  • Axios - HTTP client for API calls
-  • CSS3 / Tailwind CSS - Styling and responsive design
-  • Chart.js / Recharts - For progress and analytics charts
-Frontend Framework:
 Next.js 15 (App Router)
 
 Language:
@@ -130,6 +124,9 @@ React Hook Form + Zod
 UI Components:
 Shadcn/UI
 
+Styling:
+Tailwind CSS
+
 Icons:
 Lucide React
 
@@ -138,6 +135,18 @@ Recharts
 
 Tables:
 TanStack Table
+
+HTTP Client:
+Axios
+
+Notifications:
+Sonner
+
+Date Handling:
+date-fns
+
+Theme Management:
+next-themes
 
 BACKEND:
   • Node.js - JavaScript runtime
@@ -186,24 +195,26 @@ employeeId
 
 Use MongoDB Atlas Search
 ================================================================================
-Development Rules
+DEVELOPMENT RULES
 ================================================================================
 
-DEVELOPMENT RULES
-
-✓ Use MVC Pattern
-✓ Use Feature-Based Modules
+✓ Use Feature-Based Architecture
+✓ Use Controller-Service-Repository Pattern
 ✓ Use REST APIs
 ✓ Use JWT Authentication
 ✓ Use Refresh Tokens
-✓ Use Role-Based Access Control
-✓ Use Socket.IO
-✓ Use Cloudinary
+✓ Use Role-Based Access Control (RBAC)
+✓ Use Socket.IO for Real-Time Features
+✓ Use Cloudinary for Media Storage
 ✓ Use Redux Toolkit
 ✓ Use RTK Query
 ✓ Use React Hook Form
 ✓ Use Zod Validation
-✓ Use TypeScript Preferred
+✓ Use TypeScript
+✓ Use Modular Design Principles
+✓ Use Environment Variables for Configuration
+✓ Implement Global Error Handling
+✓ Implement Logging and Audit Trails
 
 ================================================================================
 ROUTES
@@ -755,6 +766,50 @@ ADMINISTRATOR PAGES
 ✓ Audit Logs
 ✓ Security Center
 
+ADMINISTRATOR DASHBOARD
+
+Display:
+
+✓ Total Users
+✓ Total Students
+✓ Total Teachers
+✓ Total Administrative Officers
+✓ Total Librarians
+✓ Total Finance Staff
+
+✓ Total Departments
+✓ Total Subjects
+
+✓ Total Books
+✓ Books Issued
+✓ Overdue Books
+
+✓ Total Fee Collections
+✓ Pending Payments
+✓ Refund Requests
+
+✓ Total Notices
+✓ Active Notifications
+
+✓ Attendance Overview
+✓ Academic Performance Summary
+
+✓ Recent Activities
+✓ Audit Logs
+
+✓ System Health Status
+✓ Active User Sessions
+
+Include:
+
+✓ Quick Action Cards
+✓ Analytics Widgets
+✓ Dynamic Charts
+✓ Real-Time Updates
+✓ System Monitoring Widgets
+✓ Revenue Analytics
+✓ Academic Analytics
+
 ADMINISTRATIVE OFFICER DASHBOARD
 ✓ Total Students
 ✓ New Admissions Pending Review
@@ -911,7 +966,36 @@ LIBRARIAN PERMISSIONS
 ✗ Cannot manage financial transactions outside library fines
 ✗ Cannot access administrator controls
 
+================================================================================
 5. FINANCE STAFF
+
+ROLE & PERMISSIONS
+
+✓ Login with credentials
+✓ Manage student fee records
+✓ Process fee payments
+✓ Generate receipts
+✓ Manage refunds
+✓ Track transactions
+✓ View payment history
+✓ Generate financial reports
+✓ Monitor pending payments
+✓ View revenue analytics
+
+--------------------------------------------------------------------------------
+FINANCE STAFF DASHBOARD
+--------------------------------------------------------------------------------
+
+Display:
+
+✓ Total Fee Collections
+✓ Today's Transactions
+✓ Pending Payments
+✓ Refund Requests
+✓ Monthly Revenue
+✓ Recent Transactions
+✓ Payment Status Summary
+
  FINANCE STAFF DASHBOARD
 ✓ Total Revenue
 ✓ Pending Payments
@@ -936,11 +1020,153 @@ LIBRARIAN PERMISSIONS
 ✓ View Student Payment History
  
 Include:
-Fee collection
+
+✓ Quick Action Cards
+✓ Financial Analytics Widgets
+✓ Revenue Charts
+✓ Real-Time Updates
+
+--------------------------------------------------------------------------------
+FINANCE STAFF PAGES
+--------------------------------------------------------------------------------
+
+✓ Dashboard
+✓ Student Fee Management
+✓ Payment Processing
+✓ Transaction History
+✓ Refund Management
+✓ Receipt Management
+✓ Financial Reports
+✓ Revenue Analytics
+✓ Notifications
+✓ Profile & Settings
+
+--------------------------------------------------------------------------------
+STUDENT FEE MANAGEMENT
+--------------------------------------------------------------------------------
+
+Features:
+
+✓ View Student Fees
+✓ Search Students
+✓ Filter Fee Records
+✓ Update Fee Status
+✓ Outstanding Fee Tracking
+✓ Fee Structure Management
+
+--------------------------------------------------------------------------------
+PAYMENT PROCESSING
+--------------------------------------------------------------------------------
+
+Features:
+
+✓ Record Payments
+✓ Online Payment Verification
+✓ Payment Status Tracking
+✓ Generate Receipts
+✓ Download Receipts
+✓ Payment History
+
+Payment Gateways:
+
+✓ Razorpay
+✓ Stripe
+
+--------------------------------------------------------------------------------
+TRANSACTION HISTORY
+--------------------------------------------------------------------------------
+
+Features:
+
+✓ View Transactions
+✓ Search Transactions
+✓ Filter by Date
+✓ Export Records
+✓ Download Reports
+
+--------------------------------------------------------------------------------
+REFUND MANAGEMENT
+--------------------------------------------------------------------------------
+
+Features:
+
+✓ Create Refund Requests
+✓ Approve Refunds
+✓ Reject Refunds
+✓ Refund Tracking
+✓ Refund Reports
+
+--------------------------------------------------------------------------------
+FINANCIAL REPORTS
+--------------------------------------------------------------------------------
+
+Features:
+
+✓ Daily Collection Report
+✓ Monthly Revenue Report
+✓ Outstanding Fee Report
+✓ Refund Report
+✓ Transaction Summary
+✓ Export PDF
+✓ Export Excel
+
+--------------------------------------------------------------------------------
+FINANCE STAFF DATABASE COLLECTION
+--------------------------------------------------------------------------------
+
+FinanceStaff
+{
+  _id,
+  userId,
+  employeeId,
+  fullName,
+  department,
+  designation,
+  permissions,
+  createdAt,
+  updatedAt
+}
+
 Transactions
+{
+  _id,
+  studentId,
+  feeType,
+  amount,
+  paymentMethod,
+  transactionId,
+  status,
+  paidAt
+}
+
 Refunds
-Payment reconciliation
-Reports
+{
+  _id,
+  transactionId,
+  studentId,
+  amount,
+  reason,
+  status,
+  approvedBy,
+  createdAt
+}
+
+--------------------------------------------------------------------------------
+FINANCE STAFF PERMISSIONS
+--------------------------------------------------------------------------------
+
+✓ Manage Fee Records
+✓ Process Payments
+✓ Generate Receipts
+✓ Manage Refunds
+✓ View Financial Reports
+✓ Export Reports
+✓ Track Transactions
+
+✗ Cannot Manage Users
+✗ Cannot Manage System Settings
+✗ Cannot Modify Academic Results
+✗ Cannot Manage Library Inventory
 
 ================================================================================
 Add Explicit Relationships
@@ -1424,6 +1650,90 @@ API ARCHITECTURE
 
 API ARCHITECTURE
 
+ADMINISTRATOR
+
+GET    /api/admin/dashboard
+GET    /api/admin/users
+POST   /api/admin/users
+PUT    /api/admin/users/:id
+DELETE /api/admin/users/:id
+
+GET    /api/admin/roles
+POST   /api/admin/roles
+PUT    /api/admin/roles/:id
+DELETE /api/admin/roles/:id
+
+ADMINISTRATIVE OFFICER
+
+GET    /api/admin-officers/dashboard
+
+GET    /api/certificates
+POST   /api/certificates
+PUT    /api/certificates/:id
+DELETE /api/certificates/:id
+
+GET    /api/grievances
+POST   /api/grievances
+PUT    /api/grievances/:id
+DELETE /api/grievances/:id
+
+LIBRARIAN
+
+GET    /api/books
+POST   /api/books
+PUT    /api/books/:id
+DELETE /api/books/:id
+
+GET    /api/book-transactions
+POST   /api/book-transactions
+
+POST   /api/books/issue
+POST   /api/books/return
+
+
+TIMETABLE
+
+GET    /api/timetable
+POST   /api/timetable
+PUT    /api/timetable/:id
+DELETE /api/timetable/:id
+
+SUBJECTS
+
+GET    /api/subjects
+POST   /api/subjects
+PUT    /api/subjects/:id
+DELETE /api/subjects/:id
+
+DEPARTMENTS
+
+GET    /api/departments
+POST   /api/departments
+PUT    /api/departments/:id
+DELETE /api/departments/:id
+
+CHAT
+
+GET    /api/chats
+POST   /api/chats
+
+GET    /api/chats/:id/messages
+POST   /api/chats/:id/messages
+
+REPORTS
+
+GET    /api/reports
+POST   /api/reports
+
+GET    /api/reports/download/:id
+
+ANNOUNCEMENTS
+
+GET    /api/announcements
+POST   /api/announcements
+PUT    /api/announcements/:id
+DELETE /api/announcements/:id
+
 AUTH
 POST /api/auth/register
 POST /api/auth/login
@@ -1432,11 +1742,27 @@ POST /api/auth/refresh-token
 POST /api/auth/forgot-password
 
 STUDENTS
+
+GET /api/students
+GET /api/students/:id
 GET /api/students/profile
+
+POST /api/students
+PUT /api/students/:id
+DELETE /api/students/:id
+
 PUT /api/students/profile
 
 TEACHERS
+
+GET /api/teachers
+GET /api/teachers/:id
 GET /api/teachers/profile
+
+POST /api/teachers
+PUT /api/teachers/:id
+DELETE /api/teachers/:id
+
 PUT /api/teachers/profile
 
 NOTICES
@@ -1465,9 +1791,16 @@ GET /api/books
 POST /api/books
 
 FINANCE
-GET /api/payments
-POST /api/payments
-POST /api/refunds
+
+GET    /api/payments
+POST   /api/payments
+
+GET    /api/transactions
+POST   /api/transactions
+
+GET    /api/refunds
+POST   /api/refunds
+PUT    /api/refunds/:id
 
 NOTIFICATIONS
 GET /api/notifications
@@ -1498,7 +1831,7 @@ Success:
   message: string,
   data: object
 }
-
+ 
 Error:
 {
   success: false,
@@ -1682,29 +2015,38 @@ server/
 │   ├── error.middleware.ts
 │   ├── validation.middleware.ts
 │
-├── modules/
-│
-│   ├── auth/
-│   ├── users/
-│   ├── students/
-│   ├── teachers/
-│   ├── administrators/
-│   ├── admin-officers/
-│   ├── librarians/
-│   ├── finance/
-│   ├── notices/
-│   ├── announcements/
+modules/
+
+├── auth/
+├── users/
+
+├── students/
+├── teachers/
+├── administrators/
+├── admin-officers/
+├── librarians/
+├── finance/
+
+├── academic/
 │   ├── attendance/
 │   ├── assignments/
 │   ├── results/
 │   ├── timetable/
-│   ├── library/
-│   ├── certificates/
-│   ├── grievances/
+│   └── subjects/
+
+├── library/
+
+├── communication/
+│   ├── notices/
+│   ├── announcements/
 │   ├── notifications/
-│   ├── chats/
-│   ├── reports/
-│   └── analytics/
+│   └── chats/
+
+├── certificates/
+├── grievances/
+
+├── reports/
+└── analytics/
 │
 ├── shared/
 │   ├── constants/
