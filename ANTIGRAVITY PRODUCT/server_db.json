@@ -1,0 +1,1972 @@
+{
+  "users": [
+    {
+      "_id": "u-admin",
+      "fullName": "Dr. Alice Vance",
+      "email": "admin@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "admin",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "updatedAt": "2026-06-24T18:43:49.665Z"
+    },
+    {
+      "_id": "u-teacher1",
+      "fullName": "Prof. Robert Downey",
+      "email": "teacher@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "teacher",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-01-15T00:00:00Z",
+      "updatedAt": "2026-06-28T13:24:36.429Z"
+    },
+    {
+      "_id": "u-teacher2",
+      "fullName": "Dr. Sarah Williams",
+      "email": "sarah.w@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "teacher",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-02-01T00:00:00Z",
+      "updatedAt": "2026-06-24T18:43:49.665Z"
+    },
+    {
+      "_id": "u-student1",
+      "fullName": "Omkar Prajapati",
+      "email": "student@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "student",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-08-01T00:00:00Z",
+      "updatedAt": "2026-06-29T19:27:13.723Z"
+    },
+    {
+      "_id": "u-student2",
+      "fullName": "Priya Sharma",
+      "email": "priya.s@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "student",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-08-01T00:00:00Z",
+      "updatedAt": "2026-06-24T18:43:49.665Z"
+    },
+    {
+      "_id": "u-student3",
+      "fullName": "Rahul Mehta",
+      "email": "rahul.m@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "student",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-08-01T00:00:00Z",
+      "updatedAt": "2026-06-24T18:43:49.665Z"
+    },
+    {
+      "_id": "u-librarian",
+      "fullName": "Sarah Connor",
+      "email": "librarian@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "librarian",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2026-06-24T18:43:49.665Z"
+    },
+    {
+      "_id": "u-finance",
+      "fullName": "Michael Scott",
+      "email": "finance@campushub.com",
+      "passwordHash": "Admin@123",
+      "role": "finance",
+      "isVerified": true,
+      "status": "active",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2026-06-24T18:43:49.665Z"
+    }
+  ],
+  "students": [
+    {
+      "_id": "s-omkar",
+      "userId": "u-student1",
+      "rollNumber": "SV-2026-089",
+      "registrationNumber": "REG-2023-CSE-089",
+      "email": "student@campushub.com",
+      "phone": "+91 98765 43210",
+      "department": "CSE",
+      "program": "B.Tech",
+      "semester": 6,
+      "batch": "2023-2027",
+      "attendancePercentage": 87.5,
+      "currentGPA": 9.42,
+      "currentCGPA": 9.42,
+      "parentContact": "+91 98765 43211",
+      "emergencyContact": "+91 98765 43212",
+      "address": "Mumbai, Maharashtra",
+      "verified": true,
+      "verificationDocuments": [
+        "ID_Card.pdf",
+        "Fee_Receipt_Sem5.pdf"
+      ]
+    },
+    {
+      "_id": "s-priya",
+      "userId": "u-student2",
+      "rollNumber": "SV-2026-042",
+      "registrationNumber": "REG-2023-CSE-042",
+      "email": "priya.s@campushub.com",
+      "phone": "+91 91234 56789",
+      "department": "CSE",
+      "program": "B.Tech",
+      "semester": 6,
+      "batch": "2023-2027",
+      "attendancePercentage": 92.3,
+      "currentGPA": 8.85,
+      "currentCGPA": 8.85,
+      "parentContact": "+91 91234 56780",
+      "emergencyContact": "+91 91234 56781",
+      "address": "Pune, Maharashtra",
+      "verified": true,
+      "verificationDocuments": [
+        "ID_Card.pdf"
+      ]
+    },
+    {
+      "_id": "s-rahul",
+      "userId": "u-student3",
+      "rollNumber": "SV-2026-103",
+      "registrationNumber": "REG-2023-CSE-103",
+      "email": "rahul.m@campushub.com",
+      "phone": "+91 99887 76655",
+      "department": "CSE",
+      "program": "B.Tech",
+      "semester": 6,
+      "batch": "2023-2027",
+      "attendancePercentage": 78.2,
+      "currentGPA": 7.95,
+      "currentCGPA": 7.95,
+      "parentContact": "+91 99887 76600",
+      "emergencyContact": "+91 99887 76601",
+      "address": "Delhi, India",
+      "verified": true,
+      "verificationDocuments": [
+        "ID_Card.pdf"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "_id": "t-robert",
+      "userId": "u-teacher1",
+      "employeeId": "EMP-CSE-001",
+      "fullName": "Prof. Robert Downey",
+      "email": "teacher@campushub.com",
+      "phone": "+91 98000 11111",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "assignedSubjects": [
+        "sub-1",
+        "sub-2",
+        "sub-5",
+        "sub-6",
+        "sub-8"
+      ],
+      "joiningDate": "2018-07-15",
+      "qualifications": [
+        "Ph.D. Computer Science",
+        "M.Tech CSE"
+      ],
+      "experience": 8
+    },
+    {
+      "_id": "t-sarah",
+      "userId": "u-teacher2",
+      "employeeId": "EMP-IT-002",
+      "fullName": "Dr. Sarah Williams",
+      "email": "sarah.w@campushub.com",
+      "phone": "+91 98000 22222",
+      "department": "IT",
+      "designation": "Assistant Professor",
+      "assignedSubjects": [
+        "sub-3",
+        "sub-4",
+        "sub-7"
+      ],
+      "joiningDate": "2020-01-10",
+      "qualifications": [
+        "Ph.D. AI & ML",
+        "M.Tech IT"
+      ],
+      "experience": 6
+    }
+  ],
+  "departments": [
+    {
+      "_id": "dept-cs",
+      "name": "Computer Science & Engineering",
+      "code": "CSE",
+      "hod": "Dr. Alice Vance"
+    },
+    {
+      "_id": "dept-it",
+      "name": "Information Technology",
+      "code": "IT",
+      "hod": "Dr. Sarah Williams"
+    },
+    {
+      "_id": "dept-ece",
+      "name": "Electronics & Communication",
+      "code": "ECE",
+      "hod": "Prof. Amit Kumar"
+    }
+  ],
+  "subjects": [
+    {
+      "_id": "sub-1",
+      "subjectCode": "CS601",
+      "subjectName": "Advanced Web Systems",
+      "semester": 6,
+      "credits": 4,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher1"
+    },
+    {
+      "_id": "sub-2",
+      "subjectCode": "CS602",
+      "subjectName": "Distributed Databases",
+      "semester": 6,
+      "credits": 4,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher1"
+    },
+    {
+      "_id": "sub-3",
+      "subjectCode": "CS603",
+      "subjectName": "Cloud Security & DevOps",
+      "semester": 6,
+      "credits": 3,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher2"
+    },
+    {
+      "_id": "sub-4",
+      "subjectCode": "CS604",
+      "subjectName": "AI and Machine Learning",
+      "semester": 6,
+      "credits": 4,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher2"
+    },
+    {
+      "_id": "sub-5",
+      "subjectCode": "CS605",
+      "subjectName": "Software Project Management",
+      "semester": 6,
+      "credits": 3,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher1"
+    },
+    {
+      "_id": "sub-6",
+      "subjectCode": "CS501",
+      "subjectName": "Design & Analysis of Algorithms",
+      "semester": 5,
+      "credits": 4,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher1"
+    },
+    {
+      "_id": "sub-7",
+      "subjectCode": "CS502",
+      "subjectName": "Database Management Systems",
+      "semester": 5,
+      "credits": 4,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher2"
+    },
+    {
+      "_id": "sub-8",
+      "subjectCode": "CS401",
+      "subjectName": "Operating Systems",
+      "semester": 4,
+      "credits": 4,
+      "department": "CSE",
+      "assignedTeacher": "u-teacher1"
+    }
+  ],
+  "notices": [
+    {
+      "_id": "n-faachm3",
+      "title": "App Welcome",
+      "description": "Hello, Every one in campus of our collage first of all contracts and welcome  in campus Hub a all rounder platform for you collage ",
+      "category": "academic",
+      "attachments": [],
+      "createdBy": "u-admin",
+      "createdByName": "Dr. Alice Vance",
+      "targetRoles": [
+        "student",
+        "teacher"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-26T19:29:25.122Z",
+      "updatedAt": "2026-06-26T19:29:25.122Z"
+    },
+    {
+      "_id": "n-1",
+      "title": "End Semester Examination Schedule Released",
+      "description": "The official examination timetable for Semester 6 has been published. Exams commence on June 22nd, 2026. Students must download hall tickets from the portal after verifying fee payment status. Any discrepancies should be reported to the examination cell within 3 working days.",
+      "category": "examination",
+      "attachments": [
+        "Exam_Schedule_Sem6.pdf"
+      ],
+      "createdBy": "u-admin",
+      "createdByName": "Dr. Alice Vance",
+      "targetRoles": [
+        "student",
+        "teacher"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-05T10:00:00Z",
+      "updatedAt": "2026-06-05T10:00:00Z"
+    },
+    {
+      "_id": "n-2",
+      "title": "Smart India Hackathon 2026 — Campus Round",
+      "description": "Submit your team proposals for the campus shortlisting rounds of Smart India Hackathon 2026. Prizes up to ₹5,00,000 for top projects. Each team must have 6 members with at least one female participant. Faculty mentors are mandatory for submission approval. Last date: June 20th.",
+      "category": "events",
+      "attachments": [],
+      "createdBy": "u-teacher1",
+      "createdByName": "Prof. Robert Downey",
+      "targetRoles": [
+        "student"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-07T14:30:00Z",
+      "updatedAt": "2026-06-07T14:30:00Z"
+    },
+    {
+      "_id": "n-3",
+      "title": "Extended Library Hours During Exam Preparation",
+      "description": "To support students during examination preparation, the Central Library will operate on extended hours — open 24/7 from June 15th until July 10th. Night entry requires valid student ID. Refreshments available at the reading room cafeteria.",
+      "category": "administration",
+      "attachments": [],
+      "createdBy": "u-librarian",
+      "createdByName": "Sarah Connor",
+      "targetRoles": [
+        "student",
+        "teacher"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-08T09:15:00Z",
+      "updatedAt": "2026-06-08T09:15:00Z"
+    },
+    {
+      "_id": "n-4",
+      "title": "Examination Fee Payment — Final Deadline",
+      "description": "Last date to pay Semester 6 examination fees without late fine is June 14, 2026. Late payment attracts a penalty of ₹500. Students with pending fees will not be issued hall tickets. Pay online through the Fee Portal or at the accounts office.",
+      "category": "examination",
+      "attachments": [],
+      "createdBy": "u-finance",
+      "createdByName": "Michael Scott",
+      "targetRoles": [
+        "student"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-03T11:00:00Z",
+      "updatedAt": "2026-06-03T11:00:00Z"
+    },
+    {
+      "_id": "n-5",
+      "title": "Campus Placement Drive — TCS Digital",
+      "description": "TCS Digital is conducting an on-campus recruitment drive on June 25th. Eligible: B.Tech CSE/IT students with CGPA ≥ 7.5 and no active backlogs. Register on the placement portal by June 18th. Pre-placement talk on June 24th at 3 PM in Auditorium.",
+      "category": "placement",
+      "attachments": [
+        "TCS_Digital_JD.pdf"
+      ],
+      "createdBy": "u-admin",
+      "createdByName": "Dr. Alice Vance",
+      "targetRoles": [
+        "student"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-10T08:00:00Z",
+      "updatedAt": "2026-06-10T08:00:00Z"
+    },
+    {
+      "_id": "n-6",
+      "title": "Workshop on Generative AI — Registration Open",
+      "description": "A 2-day workshop on 'Building with Generative AI' will be held on July 5-6 in the CSE department. Topics include prompt engineering, RAG architectures, and fine-tuning LLMs. Limited to 60 seats. Register through the events section.",
+      "category": "academic",
+      "attachments": [],
+      "createdBy": "u-teacher2",
+      "createdByName": "Dr. Sarah Williams",
+      "targetRoles": [
+        "student",
+        "teacher"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-06-12T10:30:00Z",
+      "updatedAt": "2026-06-12T10:30:00Z"
+    }
+  ],
+  "studyMaterials": [
+    {
+      "_id": "sm-weqxhtu",
+      "title": "kuch bhi",
+      "description": "",
+      "subject": "abc",
+      "subjectId": "",
+      "semester": 1,
+      "uploadedBy": "u-teacher1",
+      "uploadedByName": "Prof. Robert Downey",
+      "fileName": "Architecture_UX_Scalability_Deliverables.docx",
+      "fileSize": "37 KB",
+      "fileType": "docx",
+      "downloadUrl": "/uploads/1782653116491-736793269.docx",
+      "category": "project-guidelines",
+      "views": 0,
+      "downloads": 4,
+      "createdAt": "2026-06-28T13:25:16.500Z"
+    },
+    {
+      "_id": "sm-1",
+      "title": "RESTful API Design with Node.js & Express",
+      "description": "Comprehensive notes on designing RESTful APIs — routing, middleware, authentication patterns, and error handling strategies.",
+      "subject": "Advanced Web Systems",
+      "subjectId": "sub-1",
+      "semester": 6,
+      "uploadedBy": "u-teacher1",
+      "uploadedByName": "Prof. Robert Downey",
+      "fileName": "Lecture_04_NodeJS_Routing.pdf",
+      "fileSize": "1.8 MB",
+      "fileType": "pdf",
+      "downloadUrl": "#",
+      "category": "lecture-notes",
+      "views": 156,
+      "downloads": 89,
+      "createdAt": "2026-06-01T09:00:00Z"
+    },
+    {
+      "_id": "sm-2",
+      "title": "NoSQL Databases & Mongoose ODM",
+      "description": "Deep dive into document databases, collection schemas, indexing, query optimization, and Mongoose validation patterns.",
+      "subject": "Distributed Databases",
+      "subjectId": "sub-2",
+      "semester": 6,
+      "uploadedBy": "u-teacher1",
+      "uploadedByName": "Prof. Robert Downey",
+      "fileName": "Unit_3_NoSQL_Mongoose.pdf",
+      "fileSize": "3.2 MB",
+      "fileType": "pdf",
+      "downloadUrl": "#",
+      "category": "lecture-notes",
+      "views": 132,
+      "downloads": 67,
+      "createdAt": "2026-06-04T11:20:00Z"
+    },
+    {
+      "_id": "sm-3",
+      "title": "Docker & Container Orchestration",
+      "description": "Practical guide to Docker — multi-stage builds, networking, volumes, Docker Compose, and CI/CD pipeline integration.",
+      "subject": "Cloud Security & DevOps",
+      "subjectId": "sub-3",
+      "semester": 6,
+      "uploadedBy": "u-teacher2",
+      "uploadedByName": "Dr. Sarah Williams",
+      "fileName": "Docker_Orchestration.pdf",
+      "fileSize": "2.7 MB",
+      "fileType": "pdf",
+      "downloadUrl": "#",
+      "category": "lecture-notes",
+      "views": 198,
+      "downloads": 112,
+      "createdAt": "2026-06-05T15:10:00Z"
+    },
+    {
+      "_id": "sm-4",
+      "title": "Neural Networks & Deep Learning Fundamentals",
+      "description": "Introduction to neural network architectures — perceptrons, CNNs, RNNs, backpropagation, and practical TensorFlow examples.",
+      "subject": "AI and Machine Learning",
+      "subjectId": "sub-4",
+      "semester": 6,
+      "uploadedBy": "u-teacher2",
+      "uploadedByName": "Dr. Sarah Williams",
+      "fileName": "Deep_Learning_Fundamentals.pdf",
+      "fileSize": "4.1 MB",
+      "fileType": "pdf",
+      "downloadUrl": "#",
+      "category": "lecture-notes",
+      "views": 245,
+      "downloads": 178,
+      "createdAt": "2026-06-06T09:00:00Z"
+    },
+    {
+      "_id": "sm-5",
+      "title": "Lab Manual — Express.js Practical Exercises",
+      "description": "10 hands-on lab exercises covering Express.js setup, CRUD APIs, authentication, file uploads, and deployment.",
+      "subject": "Advanced Web Systems",
+      "subjectId": "sub-1",
+      "semester": 6,
+      "uploadedBy": "u-teacher1",
+      "uploadedByName": "Prof. Robert Downey",
+      "fileName": "AWS_Lab_Manual.pdf",
+      "fileSize": "2.1 MB",
+      "fileType": "pdf",
+      "downloadUrl": "#",
+      "category": "lab-manuals",
+      "views": 87,
+      "downloads": 54,
+      "createdAt": "2026-06-02T10:00:00Z"
+    },
+    {
+      "_id": "sm-6",
+      "title": "Previous Year Question Paper — Sem 5",
+      "description": "Collection of previous 3 years question papers for Design & Analysis of Algorithms with solutions.",
+      "subject": "Design & Analysis of Algorithms",
+      "subjectId": "sub-6",
+      "semester": 5,
+      "uploadedBy": "u-teacher1",
+      "uploadedByName": "Prof. Robert Downey",
+      "fileName": "DAA_PYQ_2023-2025.pdf",
+      "fileSize": "1.5 MB",
+      "fileType": "pdf",
+      "downloadUrl": "#",
+      "category": "question-banks",
+      "views": 312,
+      "downloads": 234,
+      "createdAt": "2026-05-20T14:00:00Z"
+    }
+  ],
+  "timetables": [
+    {
+      "_id": "tt-1",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "classroom": "Lab 3",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lab"
+    },
+    {
+      "_id": "tt-2",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "classroom": "Room 402",
+      "day": "Monday",
+      "startTime": "10:45",
+      "endTime": "12:15",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lecture"
+    },
+    {
+      "_id": "tt-3",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "teacherName": "Dr. Sarah Williams",
+      "classroom": "Room 205",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lecture"
+    },
+    {
+      "_id": "tt-4",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "teacherName": "Dr. Sarah Williams",
+      "classroom": "Seminar Hall 1",
+      "day": "Tuesday",
+      "startTime": "13:15",
+      "endTime": "14:45",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lecture"
+    },
+    {
+      "_id": "tt-5",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "classroom": "Room 301",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lecture"
+    },
+    {
+      "_id": "tt-6",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "classroom": "Room 402",
+      "day": "Wednesday",
+      "startTime": "10:45",
+      "endTime": "12:15",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lecture"
+    },
+    {
+      "_id": "tt-7",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "teacherName": "Dr. Sarah Williams",
+      "classroom": "Lab 2",
+      "day": "Thursday",
+      "startTime": "10:45",
+      "endTime": "12:15",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lab"
+    },
+    {
+      "_id": "tt-8",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "teacherName": "Dr. Sarah Williams",
+      "classroom": "Lab 4",
+      "day": "Thursday",
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lab"
+    },
+    {
+      "_id": "tt-9",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "classroom": "Room 402",
+      "day": "Friday",
+      "startTime": "09:30",
+      "endTime": "11:00",
+      "semester": 6,
+      "department": "CSE",
+      "type": "lecture"
+    },
+    {
+      "_id": "tt-10",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "classroom": "Room 301",
+      "day": "Friday",
+      "startTime": "11:15",
+      "endTime": "12:45",
+      "semester": 6,
+      "department": "CSE",
+      "type": "tutorial"
+    }
+  ],
+  "books": [
+    {
+      "_id": "b-8",
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas, Andrew Hunt",
+      "isbn": "978-0135957059",
+      "category": "Software Engineering",
+      "quantity": 4,
+      "availableQuantity": 3,
+      "location": "Shelf D1",
+      "publishedYear": 2019,
+      "description": "Timeless advice on software craftsmanship, from coding to career development.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-6",
+      "title": "Design Patterns",
+      "author": "Gamma, Helm, Johnson, Vlissides",
+      "isbn": "978-0201633610",
+      "category": "Software Engineering",
+      "quantity": 6,
+      "availableQuantity": 3,
+      "location": "Shelf D3",
+      "publishedYear": 1994,
+      "description": "The classic Gang of Four patterns for reusable object-oriented design.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-3",
+      "title": "Database System Concepts",
+      "author": "Abraham Silberschatz",
+      "isbn": "978-0078022159",
+      "category": "Information Systems",
+      "quantity": 15,
+      "availableQuantity": 12,
+      "location": "Shelf B2",
+      "publishedYear": 2019,
+      "description": "Comprehensive coverage of relational databases, SQL, transaction management, and query optimization.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-4",
+      "title": "Computer Networking: A Top-Down Approach",
+      "author": "James Kurose",
+      "isbn": "978-0136681533",
+      "category": "Networking",
+      "quantity": 10,
+      "availableQuantity": 7,
+      "location": "Shelf C1",
+      "publishedYear": 2020,
+      "description": "Network fundamentals from application layer to physical layer with hands-on labs.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-1",
+      "title": "Modern Operating Systems",
+      "author": "Andrew S. Tanenbaum",
+      "isbn": "978-0130313583",
+      "category": "Computer Science",
+      "quantity": 12,
+      "availableQuantity": 8,
+      "location": "Shelf A3",
+      "publishedYear": 2022,
+      "description": "Classic text on OS internals covering virtualization, threads, memory management, and filesystems.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-5",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "isbn": "978-0132350884",
+      "category": "Software Engineering",
+      "quantity": 5,
+      "availableQuantity": 1,
+      "location": "Shelf D2",
+      "publishedYear": 2008,
+      "description": "Essential guide to writing readable, maintainable, and professional software.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-7",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell, Peter Norvig",
+      "isbn": "978-0134610993",
+      "category": "AI & ML",
+      "quantity": 7,
+      "availableQuantity": 3,
+      "location": "Shelf E1",
+      "publishedYear": 2020,
+      "description": "The most widely used AI textbook covering search, logic, probability, ML, and NLP.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "_id": "b-2",
+      "title": "Introduction to Algorithms",
+      "author": "Cormen, Leiserson, Rivest, Stein",
+      "isbn": "978-0262046305",
+      "category": "Computer Science",
+      "quantity": 8,
+      "availableQuantity": 3,
+      "location": "Shelf A1",
+      "publishedYear": 2022,
+      "description": "The definitive CLRS textbook on algorithm design and complexity analysis.",
+      "createdAt": "2024-01-15T00:00:00Z"
+    }
+  ],
+  "borrowRecords": [
+    {
+      "_id": "br-1",
+      "studentId": "s-omkar",
+      "studentName": "Omkar Prajapati",
+      "bookId": "b-1",
+      "bookTitle": "Modern Operating Systems",
+      "bookAuthor": "Andrew S. Tanenbaum",
+      "issueDate": "2026-05-10",
+      "dueDate": "2026-05-24",
+      "returnDate": "2026-05-22",
+      "fineAmount": 0,
+      "status": "returned"
+    },
+    {
+      "_id": "br-2",
+      "studentId": "s-omkar",
+      "studentName": "Omkar Prajapati",
+      "bookId": "b-5",
+      "bookTitle": "Clean Code",
+      "bookAuthor": "Robert C. Martin",
+      "issueDate": "2026-05-28",
+      "dueDate": "2026-06-11",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-3",
+      "studentId": "s-priya",
+      "studentName": "Priya Sharma",
+      "bookId": "b-2",
+      "bookTitle": "Introduction to Algorithms",
+      "bookAuthor": "CLRS",
+      "issueDate": "2026-04-15",
+      "dueDate": "2026-04-29",
+      "fineAmount": 50,
+      "status": "overdue"
+    },
+    {
+      "_id": "br-4",
+      "studentId": "s-priya",
+      "studentName": "Priya Sharma",
+      "bookId": "b-7",
+      "bookTitle": "AI: A Modern Approach",
+      "bookAuthor": "Russell & Norvig",
+      "issueDate": "2026-06-01",
+      "dueDate": "2026-06-15",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-5",
+      "studentId": "s-rahul",
+      "studentName": "Rahul Mehta",
+      "bookId": "b-4",
+      "bookTitle": "Computer Networking",
+      "bookAuthor": "James Kurose",
+      "issueDate": "2026-06-05",
+      "dueDate": "2026-06-19",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-d5p9csx",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-8",
+      "bookTitle": "The Pragmatic Programmer",
+      "bookAuthor": "David Thomas, Andrew Hunt",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-t6lndzm",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-8",
+      "bookTitle": "The Pragmatic Programmer",
+      "bookAuthor": "David Thomas, Andrew Hunt",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-bbtoybk",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-8",
+      "bookTitle": "The Pragmatic Programmer",
+      "bookAuthor": "David Thomas, Andrew Hunt",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-28e550z",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-6",
+      "bookTitle": "Design Patterns",
+      "bookAuthor": "Gamma, Helm, Johnson, Vlissides",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-ibfnvty",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-6",
+      "bookTitle": "Design Patterns",
+      "bookAuthor": "Gamma, Helm, Johnson, Vlissides",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-n5c0xbg",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-6",
+      "bookTitle": "Design Patterns",
+      "bookAuthor": "Gamma, Helm, Johnson, Vlissides",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-ngethby",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-6",
+      "bookTitle": "Design Patterns",
+      "bookAuthor": "Gamma, Helm, Johnson, Vlissides",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-05y8soi",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-3",
+      "bookTitle": "Database System Concepts",
+      "bookAuthor": "Abraham Silberschatz",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-uktb9hp",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-8",
+      "bookTitle": "The Pragmatic Programmer",
+      "bookAuthor": "David Thomas, Andrew Hunt",
+      "issueDate": "2026-06-26",
+      "dueDate": "2026-07-10",
+      "fineAmount": 0,
+      "status": "returned",
+      "returnDate": "2026-06-26"
+    },
+    {
+      "_id": "br-1dbhdb2",
+      "studentId": "s-omkar",
+      "studentName": "SV-2026-089",
+      "bookId": "b-6",
+      "bookTitle": "Design Patterns",
+      "bookAuthor": "Gamma, Helm, Johnson, Vlissides",
+      "issueDate": "2026-06-29",
+      "dueDate": "2026-07-13",
+      "fineAmount": 0,
+      "status": "borrowed"
+    }
+  ],
+  "transactions": [
+    {
+      "_id": "txn-1",
+      "studentId": "s-omkar",
+      "studentName": "Omkar Prajapati",
+      "feeType": "examination",
+      "amount": 3500,
+      "paymentMethod": "Online",
+      "transactionId": "TXN-88493121",
+      "status": "paid",
+      "semester": 5,
+      "paidAt": "2025-11-12T10:30:00Z",
+      "dueDate": "2025-11-15"
+    },
+    {
+      "_id": "txn-2",
+      "studentId": "s-omkar",
+      "studentName": "Omkar Prajapati",
+      "feeType": "tuition",
+      "amount": 75000,
+      "paymentMethod": "Online",
+      "transactionId": "TXN-77291044",
+      "status": "paid",
+      "semester": 6,
+      "paidAt": "2026-01-05T09:00:00Z",
+      "dueDate": "2026-01-10"
+    },
+    {
+      "_id": "txn-3",
+      "studentId": "s-omkar",
+      "studentName": "Omkar Prajapati",
+      "feeType": "examination",
+      "amount": 3500,
+      "paymentMethod": "Online",
+      "transactionId": "TXN-28443423",
+      "status": "paid",
+      "semester": 6,
+      "dueDate": "2026-06-14",
+      "paidAt": "2026-06-26T19:10:44.151Z"
+    },
+    {
+      "_id": "txn-4",
+      "studentId": "s-priya",
+      "studentName": "Priya Sharma",
+      "feeType": "examination",
+      "amount": 3500,
+      "paymentMethod": "Online",
+      "transactionId": "TXN-66182033",
+      "status": "paid",
+      "semester": 5,
+      "paidAt": "2025-11-14T11:00:00Z",
+      "dueDate": "2025-11-15"
+    },
+    {
+      "_id": "txn-5",
+      "studentId": "s-priya",
+      "studentName": "Priya Sharma",
+      "feeType": "tuition",
+      "amount": 75000,
+      "paymentMethod": "Online",
+      "transactionId": "TXN-55073022",
+      "status": "paid",
+      "semester": 6,
+      "paidAt": "2026-01-08T10:00:00Z",
+      "dueDate": "2026-01-10"
+    },
+    {
+      "_id": "txn-6",
+      "studentId": "s-priya",
+      "studentName": "Priya Sharma",
+      "feeType": "examination",
+      "amount": 3500,
+      "paymentMethod": "",
+      "transactionId": "",
+      "status": "pending",
+      "semester": 6,
+      "dueDate": "2026-06-14"
+    },
+    {
+      "_id": "txn-7",
+      "studentId": "s-rahul",
+      "studentName": "Rahul Mehta",
+      "feeType": "examination",
+      "amount": 3500,
+      "paymentMethod": "",
+      "transactionId": "",
+      "status": "pending",
+      "semester": 6,
+      "dueDate": "2026-06-14"
+    },
+    {
+      "_id": "txn-8",
+      "studentId": "s-rahul",
+      "studentName": "Rahul Mehta",
+      "feeType": "library",
+      "amount": 500,
+      "paymentMethod": "",
+      "transactionId": "",
+      "status": "pending",
+      "semester": 6,
+      "dueDate": "2026-06-20"
+    }
+  ],
+  "results": [
+    {
+      "_id": "r-1",
+      "studentId": "s-omkar",
+      "subjectId": "sub-6",
+      "subjectName": "Design & Analysis of Algorithms",
+      "semester": 5,
+      "marksObtained": 92,
+      "totalMarks": 100,
+      "grade": "A+",
+      "gpa": 10,
+      "credits": 4,
+      "publishedBy": "u-teacher1",
+      "createdAt": "2025-12-18T00:00:00Z"
+    },
+    {
+      "_id": "r-2",
+      "studentId": "s-omkar",
+      "subjectId": "sub-7",
+      "subjectName": "Database Management Systems",
+      "semester": 5,
+      "marksObtained": 95,
+      "totalMarks": 100,
+      "grade": "A+",
+      "gpa": 10,
+      "credits": 4,
+      "publishedBy": "u-teacher2",
+      "createdAt": "2025-12-18T00:00:00Z"
+    },
+    {
+      "_id": "r-3",
+      "studentId": "s-omkar",
+      "subjectId": "sub-8",
+      "subjectName": "Operating Systems",
+      "semester": 4,
+      "marksObtained": 88,
+      "totalMarks": 100,
+      "grade": "A",
+      "gpa": 9,
+      "credits": 4,
+      "publishedBy": "u-teacher1",
+      "createdAt": "2025-06-15T00:00:00Z"
+    },
+    {
+      "_id": "r-4",
+      "studentId": "s-priya",
+      "subjectId": "sub-6",
+      "subjectName": "Design & Analysis of Algorithms",
+      "semester": 5,
+      "marksObtained": 85,
+      "totalMarks": 100,
+      "grade": "A",
+      "gpa": 9,
+      "credits": 4,
+      "publishedBy": "u-teacher1",
+      "createdAt": "2025-12-18T00:00:00Z"
+    },
+    {
+      "_id": "r-5",
+      "studentId": "s-priya",
+      "subjectId": "sub-7",
+      "subjectName": "Database Management Systems",
+      "semester": 5,
+      "marksObtained": 78,
+      "totalMarks": 100,
+      "grade": "B+",
+      "gpa": 8,
+      "credits": 4,
+      "publishedBy": "u-teacher2",
+      "createdAt": "2025-12-18T00:00:00Z"
+    },
+    {
+      "_id": "r-6",
+      "studentId": "s-rahul",
+      "subjectId": "sub-6",
+      "subjectName": "Design & Analysis of Algorithms",
+      "semester": 5,
+      "marksObtained": 72,
+      "totalMarks": 100,
+      "grade": "B",
+      "gpa": 7,
+      "credits": 4,
+      "publishedBy": "u-teacher1",
+      "createdAt": "2025-12-18T00:00:00Z"
+    }
+  ],
+  "progress": [
+    {
+      "_id": "p-omkar",
+      "studentId": "s-omkar",
+      "currentCGPA": 9.42,
+      "totalCredits": 120,
+      "passedCredits": 120,
+      "currentSemester": 6,
+      "academicHistory": [
+        {
+          "semester": 1,
+          "sgpa": 9.1,
+          "credits": 24
+        },
+        {
+          "semester": 2,
+          "sgpa": 9.3,
+          "credits": 24
+        },
+        {
+          "semester": 3,
+          "sgpa": 9.25,
+          "credits": 24
+        },
+        {
+          "semester": 4,
+          "sgpa": 9.4,
+          "credits": 24
+        },
+        {
+          "semester": 5,
+          "sgpa": 9.55,
+          "credits": 24
+        }
+      ]
+    },
+    {
+      "_id": "p-priya",
+      "studentId": "s-priya",
+      "currentCGPA": 8.85,
+      "totalCredits": 120,
+      "passedCredits": 118,
+      "currentSemester": 6,
+      "academicHistory": [
+        {
+          "semester": 1,
+          "sgpa": 8.5,
+          "credits": 24
+        },
+        {
+          "semester": 2,
+          "sgpa": 8.7,
+          "credits": 24
+        },
+        {
+          "semester": 3,
+          "sgpa": 8.65,
+          "credits": 24
+        },
+        {
+          "semester": 4,
+          "sgpa": 8.9,
+          "credits": 24
+        },
+        {
+          "semester": 5,
+          "sgpa": 9,
+          "credits": 24
+        }
+      ]
+    },
+    {
+      "_id": "p-rahul",
+      "studentId": "s-rahul",
+      "currentCGPA": 7.95,
+      "totalCredits": 120,
+      "passedCredits": 116,
+      "currentSemester": 6,
+      "academicHistory": [
+        {
+          "semester": 1,
+          "sgpa": 7.6,
+          "credits": 24
+        },
+        {
+          "semester": 2,
+          "sgpa": 7.8,
+          "credits": 24
+        },
+        {
+          "semester": 3,
+          "sgpa": 7.75,
+          "credits": 24
+        },
+        {
+          "semester": 4,
+          "sgpa": 8.1,
+          "credits": 24
+        },
+        {
+          "semester": 5,
+          "sgpa": 8.2,
+          "credits": 24
+        }
+      ]
+    }
+  ],
+  "attendance": [
+    {
+      "_id": "att-1",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-05-25",
+      "status": "present"
+    },
+    {
+      "_id": "att-2",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-05-25",
+      "status": "present"
+    },
+    {
+      "_id": "att-3",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-05-26",
+      "status": "present"
+    },
+    {
+      "_id": "att-4",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-05-26",
+      "status": "present"
+    },
+    {
+      "_id": "att-5",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-05-27",
+      "status": "present"
+    },
+    {
+      "_id": "att-6",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-05-27",
+      "status": "present"
+    },
+    {
+      "_id": "att-7",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-05-28",
+      "status": "present"
+    },
+    {
+      "_id": "att-8",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-05-28",
+      "status": "present"
+    },
+    {
+      "_id": "att-9",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-05-31",
+      "status": "present"
+    },
+    {
+      "_id": "att-10",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-05-31",
+      "status": "present"
+    },
+    {
+      "_id": "att-11",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-01",
+      "status": "present"
+    },
+    {
+      "_id": "att-12",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-01",
+      "status": "present"
+    },
+    {
+      "_id": "att-13",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-02",
+      "status": "present"
+    },
+    {
+      "_id": "att-14",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-02",
+      "status": "late"
+    },
+    {
+      "_id": "att-15",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-03",
+      "status": "late"
+    },
+    {
+      "_id": "att-16",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-03",
+      "status": "present"
+    },
+    {
+      "_id": "att-17",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-04",
+      "status": "present"
+    },
+    {
+      "_id": "att-18",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-04",
+      "status": "absent"
+    },
+    {
+      "_id": "att-19",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-07",
+      "status": "late"
+    },
+    {
+      "_id": "att-20",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-07",
+      "status": "present"
+    },
+    {
+      "_id": "att-21",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-08",
+      "status": "present"
+    },
+    {
+      "_id": "att-22",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-08",
+      "status": "absent"
+    },
+    {
+      "_id": "att-23",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-09",
+      "status": "absent"
+    },
+    {
+      "_id": "att-24",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-09",
+      "status": "present"
+    },
+    {
+      "_id": "att-25",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-10",
+      "status": "present"
+    },
+    {
+      "_id": "att-26",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-10",
+      "status": "present"
+    },
+    {
+      "_id": "att-27",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-11",
+      "status": "present"
+    },
+    {
+      "_id": "att-28",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-11",
+      "status": "present"
+    },
+    {
+      "_id": "att-29",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-14",
+      "status": "present"
+    },
+    {
+      "_id": "att-30",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-14",
+      "status": "present"
+    },
+    {
+      "_id": "att-31",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-15",
+      "status": "present"
+    },
+    {
+      "_id": "att-32",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-15",
+      "status": "present"
+    },
+    {
+      "_id": "att-33",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-16",
+      "status": "present"
+    },
+    {
+      "_id": "att-34",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-16",
+      "status": "present"
+    },
+    {
+      "_id": "att-35",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-17",
+      "status": "present"
+    },
+    {
+      "_id": "att-36",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-17",
+      "status": "present"
+    },
+    {
+      "_id": "att-37",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-18",
+      "status": "present"
+    },
+    {
+      "_id": "att-38",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-18",
+      "status": "present"
+    },
+    {
+      "_id": "att-39",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-21",
+      "status": "present"
+    },
+    {
+      "_id": "att-40",
+      "studentId": "s-omkar",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-21",
+      "status": "present"
+    },
+    {
+      "_id": "att-41",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-22",
+      "status": "present"
+    },
+    {
+      "_id": "att-42",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-22",
+      "status": "present"
+    },
+    {
+      "_id": "att-43",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-23",
+      "status": "present"
+    },
+    {
+      "_id": "att-44",
+      "studentId": "s-omkar",
+      "subjectId": "sub-5",
+      "subjectName": "Software Project Management",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-23",
+      "status": "present"
+    },
+    {
+      "_id": "att-45",
+      "studentId": "s-omkar",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-24",
+      "status": "present"
+    },
+    {
+      "_id": "att-46",
+      "studentId": "s-omkar",
+      "subjectId": "sub-4",
+      "subjectName": "AI and Machine Learning",
+      "teacherId": "u-teacher2",
+      "date": "2026-06-24",
+      "status": "late"
+    },
+    {
+      "_id": "att-4mucyhf",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-24",
+      "status": "present"
+    },
+    {
+      "_id": "att-ugrfgeo",
+      "studentId": "s-priya",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-24",
+      "status": "present"
+    },
+    {
+      "_id": "att-gjyt93l",
+      "studentId": "s-rahul",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-24",
+      "status": "present"
+    },
+    {
+      "_id": "att-c9e118w",
+      "studentId": "s-omkar",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-26",
+      "status": "present"
+    },
+    {
+      "_id": "att-t2wz9lo",
+      "studentId": "s-priya",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-26",
+      "status": "present"
+    },
+    {
+      "_id": "att-7kajr3u",
+      "studentId": "s-rahul",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "date": "2026-06-26",
+      "status": "present"
+    }
+  ],
+  "assignments": [
+    {
+      "_id": "asgn-1",
+      "title": "Build a REST API with Express.js",
+      "description": "Create a CRUD API for a blog application with authentication, validation, and error handling.",
+      "subjectId": "sub-1",
+      "subjectName": "Advanced Web Systems",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "dueDate": "2026-06-20",
+      "attachments": [
+        "Assignment_01_Spec.pdf"
+      ],
+      "totalMarks": 50,
+      "status": "active",
+      "createdAt": "2026-06-01T00:00:00Z"
+    },
+    {
+      "_id": "asgn-2",
+      "title": "MongoDB Schema Design Project",
+      "description": "Design and implement a normalized + denormalized schema for an e-commerce platform. Include indexes and aggregation pipelines.",
+      "subjectId": "sub-2",
+      "subjectName": "Distributed Databases",
+      "teacherId": "u-teacher1",
+      "teacherName": "Prof. Robert Downey",
+      "dueDate": "2026-06-25",
+      "attachments": [],
+      "totalMarks": 40,
+      "status": "active",
+      "createdAt": "2026-06-05T00:00:00Z"
+    },
+    {
+      "_id": "asgn-3",
+      "title": "Dockerize a Full-Stack Application",
+      "description": "Containerize a MERN stack application with Docker Compose. Include separate services for frontend, backend, and database.",
+      "subjectId": "sub-3",
+      "subjectName": "Cloud Security & DevOps",
+      "teacherId": "u-teacher2",
+      "teacherName": "Dr. Sarah Williams",
+      "dueDate": "2026-06-18",
+      "attachments": [],
+      "totalMarks": 30,
+      "status": "active",
+      "createdAt": "2026-06-03T00:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "nt-1",
+      "recipientId": "s-omkar",
+      "title": "Welcome to Campus Hub",
+      "message": "Your verified student profile is active. Roll: SV-2026-089. Access all campus services from your dashboard.",
+      "category": "academic",
+      "isRead": true,
+      "createdAt": "2026-06-08T09:00:00Z"
+    },
+    {
+      "_id": "nt-2",
+      "recipientId": "s-omkar",
+      "title": "Exam Fee Payment Due",
+      "message": "Semester 6 examination fees (₹3,500) are due by June 14th. Pay through the Fees & Payments section.",
+      "category": "fee",
+      "isRead": true,
+      "createdAt": "2026-06-08T10:15:00Z"
+    },
+    {
+      "_id": "nt-3",
+      "recipientId": "s-omkar",
+      "title": "Library Book Due Soon",
+      "message": "'Clean Code' by Robert C. Martin is due on June 11. Renew or return to avoid fines.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-08T12:00:00Z"
+    },
+    {
+      "_id": "nt-4",
+      "recipientId": "all",
+      "title": "New Notice: Exam Schedule Released",
+      "message": "End Semester Examination schedule has been published. Check the Notice Board for details.",
+      "category": "examination",
+      "isRead": true,
+      "createdAt": "2026-06-05T10:05:00Z"
+    },
+    {
+      "_id": "nt-5",
+      "recipientId": "all",
+      "title": "Placement Drive — TCS Digital",
+      "message": "TCS Digital campus recruitment drive on June 25th. CGPA ≥ 7.5 required. Register by June 18th.",
+      "category": "event",
+      "isRead": true,
+      "createdAt": "2026-06-10T08:05:00Z"
+    },
+    {
+      "_id": "nt-6",
+      "recipientId": "s-priya",
+      "title": "Overdue Book Alert",
+      "message": "'Introduction to Algorithms' was due on April 29. Fine of ₹50 has been applied. Return immediately.",
+      "category": "library",
+      "isRead": false,
+      "createdAt": "2026-05-01T09:00:00Z"
+    },
+    {
+      "_id": "nt-x3ejt53",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"The Pragmatic Programmer\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:08:49.065Z"
+    },
+    {
+      "_id": "nt-i04kpq2",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"The Pragmatic Programmer\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:08:50.404Z"
+    },
+    {
+      "_id": "nt-hp3bshs",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"The Pragmatic Programmer\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:08:50.779Z"
+    },
+    {
+      "_id": "nt-bzhqk03",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"Design Patterns\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:08:56.187Z"
+    },
+    {
+      "_id": "nt-6to12w7",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"Design Patterns\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:08:57.256Z"
+    },
+    {
+      "_id": "nt-wc3c9yc",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"Design Patterns\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:09:00.107Z"
+    },
+    {
+      "_id": "nt-uszrd6a",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"Design Patterns\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:09:09.052Z"
+    },
+    {
+      "_id": "nt-0l4qv1s",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"Database System Concepts\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:09:15.731Z"
+    },
+    {
+      "_id": "nt-9duid6l",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"The Pragmatic Programmer\" issued. Return by 2026-07-10.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:10:26.110Z"
+    },
+    {
+      "_id": "nt-c11zmx7",
+      "recipientId": "s-omkar",
+      "title": "Payment Successful",
+      "message": "Payment of ₹3500 for examination fees processed. Ref: TXN-28443423.",
+      "category": "fee",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:10:44.151Z"
+    },
+    {
+      "_id": "nt-49iu9jh",
+      "recipientId": "all",
+      "title": "New Notice: App Welcome",
+      "message": "Hello, Every one in campus of our collage first of all contracts and welcome  in campus Hub a all rounder platform for y...",
+      "category": "academic",
+      "isRead": true,
+      "createdAt": "2026-06-26T19:29:25.122Z"
+    },
+    {
+      "_id": "nt-1dsiuit",
+      "recipientId": "all",
+      "title": "New Study Material",
+      "message": "Prof. Robert Downey uploaded \"kuch bhi\" for abc.",
+      "category": "academic",
+      "isRead": true,
+      "createdAt": "2026-06-28T13:25:16.500Z"
+    },
+    {
+      "_id": "nt-v2wf2xr",
+      "recipientId": "s-omkar",
+      "title": "Book Issued",
+      "message": "\"Design Patterns\" issued. Return by 2026-07-13.",
+      "category": "library",
+      "isRead": true,
+      "createdAt": "2026-06-29T19:28:07.513Z"
+    }
+  ]
+}
